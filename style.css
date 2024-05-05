@@ -1,7 +1,5 @@
-/* styles.css */
-
 body {
-	font-family: Arial, sans-serif;
+	font-family: "Fira Code", monospace;
 	margin: 0;
 	padding: 0;
 }
@@ -25,16 +23,6 @@ h5 {
 	margin-bottom: 6px;
 }
 
-.menu {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-.menu li {
-	margin-right: 20px;
-}
-
 
 pre {
 	margin: 0;
@@ -55,10 +43,6 @@ p {
 	border: 1px solid #ccc;
 	padding: 10px;
 	transition: left 0.3s ease;
-}
-
-.menu li:hover .estrutura {
-	display: block;
 }
 
 .section {
@@ -98,13 +82,16 @@ ul {
 }
 
 /* Estilização da navbar */
-.navbar {
+.navbar, .normal {
     background-color: #333;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .navbar > li {
     float: left;
+    margin-right: 20px;
 }
 
 .navbar li a {
@@ -154,7 +141,7 @@ ul {
     left: 100%;
     bottom: 0;
     background-color: #000000;
-    min-width: 160px;
+    min-width: 190px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -168,6 +155,20 @@ ul {
 
 .imagemalgo{
     width: 700px;
+}
+
+.coment{
+    width: 30%;
+    height: 30%;
+}
+
+.comentarios{
+    display: flex;
+}
+
+img{
+    display: block;
+    margin: 8px auto;
 }
 
 table {
@@ -190,3 +191,7 @@ tr:nth-child(odd) {
     background-color: #fff; /* Cor de fundo das linhas ímpares */
 }
 
+.ementa, .habilidades{
+    background-color: #555;
+    color: white;
+}
