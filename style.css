@@ -1,0 +1,192 @@
+/* styles.css */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	padding: 20px;
+}
+
+h5 {
+	margin-bottom: 6px;
+}
+
+.menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	margin-right: 20px;
+}
+
+
+pre {
+	margin: 0;
+}
+
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+.estrutura {
+	display: none;
+	position: absolute;
+	top: 70%;
+	left: 100%;
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 10px;
+	transition: left 0.3s ease;
+}
+
+.menu li:hover .estrutura {
+	display: block;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.syntax,
+.example,
+.reads {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transform: translateX(100%); 
+    transition: opacity 0.7s ease, transform 0.7s ease; 
+}
+
+.active-section {
+	opacity: 1;
+    transform: translateX(0); 
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estilização da navbar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar > li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Hover states */
+.navbar li a:hover, .dropdown-submenu-content:hover ul li{
+    background-color: #555;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Submenu */
+.dropdown-submenu .dropdown-submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+    display: block;
+}
+.imagempc{
+    width: 400px;
+    height: 50%;
+}
+
+.imagemalgo{
+    width: 700px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000; /* Cor da borda da tabela */
+}
+
+th, td {
+    border: 1px solid #000; /* Cor da borda das células */
+    padding: 8px; /* Espaçamento interno das células */
+    text-align: center; /* Alinhamento do texto ao centro */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* Cor de fundo das linhas ímpares */
+}
+

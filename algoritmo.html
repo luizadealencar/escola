@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo, Lógica e Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Algoritmo, Lógica e Programação</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown">
+                    <a href="apl.html">Definições</a>
+                    <ul class="dropdown-content">
+                        <li><a href="apl.html#computador">Computador</a></li>
+                        <li><a href="apl.html#algo">Algoritmo</a></li>
+                        <li><a href="apl.html#lp">Linguagem de programação</a></li>
+                        <li><a href="apl.html#bit">Bit</a></li>
+                        <li><a href="apl.html#byte">Byte</a></li>
+                        <li><a href="apl.html#hardware">Hardware</a></li>
+                        <li><a href="apl.html#software">Software</a></li>
+                        <li><a href="apl.html#compilador">Compilador</a></li>
+                        <li><a href="apl.html#pseudolinguagem">Pseudolinguagem</a></li>
+                        <li><a href="apl.html#variavel">Variáveis</a></li>
+                        <li><a href="apl.html#constante">Constantes</a></li>
+                        <li><a href="apl.html#comentario">Comentário</a></li>
+                        <li><a href="apl.html#comando">Comando de Atribuição</a></li>
+                        <li><a href="apl.html#expressao">Expressões Aritméticas e Operadores</a></li>
+                        <li><a href="apl.html#logico">Operadores Lógicos</a></li>
+                        <li><a href="apl.html#relacional">Operadores Relacionais</a></li>
+                        <li><a href="apl.html#entrada">Entrada e Saída</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="algoritmo.html">Algoritmo</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#algoritmo">Algoritmo</a></li>
+                        <li><a href="#condicao">Condição</a></li>
+                        <li><a href="#alternativa">Alternativa Composta</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#repeticao">Estrutura de Repetição</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="#enquanto">Enquanto .. faça</a></li>
+                                <li><a href="#para">Para .. faça</a></li>
+                                <li><a href="#repita">Repita .. até</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+
+    <section id="algoritmo">
+        <h2>Algoritmo</h2>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            início
+              sequência de comandos
+            fim
+          </code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            início
+              caractere nome1, nome2
+              escreva(“Digite o primeiro nome: ”)
+              leia(nome1)
+              escreva(“Digite o segundo nome: ”)
+              leia(nome2)
+              escreva(nome1, nome2)
+            fim
+          </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            A=2
+            B=3
+            Se A é maior do que B
+              então C = A + B
+            fim Se
+          </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="condicao">
+        <h2>Condição</h2>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            se &lt;condição V&gt;
+              então &lt;comandos&gt;
+            fim se
+          </code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            A ← 2
+            B ← 3
+            se A &gt; B
+              então C ← A + B
+            fim se
+          </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            A=2
+            B=3
+            Se A é maior do que B
+              então C = A + B
+            fim Se
+          </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="alternativa">
+        <h2>Alternativa Composta</h2>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            se &lt;condição V&gt;
+                então &lt;comandos&gt;
+            se não &lt;outros comandos&gt;
+            fim se</code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            A ← 2
+            B ← 3
+            se A &gt; B
+                então C ← A + B
+            se não C ← A - B
+            fim se
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            A=2
+            B=3
+            Se A é maior do que B
+                então C = A + B
+            se não C = A - B
+            fim Se
+        </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="repeticao">
+        <h2>Estrutura de Repetição</h2>
+
+        <h3 id="enquanto">Enquanto .. faça:</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            enquanto &lt;condição&gt; faça
+                &lt;sequência de comandos&gt;
+            fim enquanto
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            I ← 1
+            enquanto I &lt;= 3 faça
+                escreva(“I = “, I)
+                I ← I + 1
+            fim enquanto
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            I=1
+            Enquanto I é menor ou igual a 3, faça:
+                escreva(“I = “, I)
+                I = I + 1
+            fim Enquanto
+        </code></pre>
+            </div>
+        </div>
+
+        <h3 id="para">Para .. faça:</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            para i de a até b faça
+                &lt;comando 1&gt;
+                &lt;comando 2&gt;
+                &lt;comando 3&gt;
+                &lt;comando n&gt;
+            fim para
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            para I de 1 até 5 faça
+                X  ← X^2
+                escreva(x)
+            fim para
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            Para I de 1 até 5 faça
+                X=X^2 (X elevado a 2)
+                escreva(X)
+            fim para
+        </code></pre>
+
+            </div>
+        </div>
+        <h3 id="repita">Repita .. até:</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Sintaxe:</h3>
+                <pre><code>
+            repita
+                &lt;sequência de comandos&gt;
+            até &lt;condição&gt;
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Exemplo:</h3>
+                <pre><code>
+            I ← 1
+            repita
+                escreva(“I = “, I)
+                I ← I + 1
+            até I > 3
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Lê-se:</h3>
+                <pre><code>
+            I=1
+            repita
+                escreva(“I = “, I)
+                I = I + 1
+            até I > 3
+        </code></pre>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Função para adicionar classe 'active-section' à seção visível
+        function setActiveSection() {
+            const sections = document.querySelectorAll('.syntax, .example, .reads');
+            sections.forEach(section => {
+                const bounding = section.getBoundingClientRect();
+                if (
+                    bounding.top >= 0 &&
+                    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                ) {
+                    section.classList.add('active-section');
+                } else {
+                    section.classList.remove('active-section');
+                }
+            });
+        }
+
+        // Adiciona um ouvinte de evento de rolagem para chamar a função quando necessário
+        window.addEventListener('scroll', setActiveSection);
+        // Chama a função quando a página é carregada para definir a seção inicialmente visível
+        window.addEventListener('load', setActiveSection);
+    </script>
+</body>
+
+</html>

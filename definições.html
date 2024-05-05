@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo, Lógica e Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Algoritmo, Lógica e Programação</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown">
+                    <a href="apl.html">Definições</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#computador">Computador</a></li>
+                        <li><a href="#algo">Algoritmo</a></li>
+                        <li><a href="#lp">Linguagem de programação</a></li>
+                        <li><a href="#bit">Bit</a></li>
+                        <li><a href="#byte">Byte</a></li>
+                        <li><a href="#hardware">Hardware</a></li>
+                        <li><a href="#software">Software</a></li>
+                        <li><a href="#compilador">Compilador</a></li>
+                        <li><a href="#pseudolinguagem">Pseudolinguagem</a></li>
+                        <li><a href="#variavel">Variáveis</a></li>
+                        <li><a href="#constante">Constantes</a></li>
+                        <li><a href="#comentario">Comentário</a></li>
+                        <li><a href="#comando">Comando de Atribuição</a></li>
+                        <li><a href="#expressao">Expressões Aritméticas e Operadores</a></li>
+                        <li><a href="#logico">Operadores Lógicos</a></li>
+                        <li><a href="#relacional">Operadores Relacionais</a></li>
+                        <li><a href="#entrada">Entrada e Saída</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="algoritmo.html">Algoritmo</a>
+                    <ul class="dropdown-content">
+                        <li><a href="algoritmo.html#algoritmo">Algoritmo</a></li>
+                        <li><a href="algoritmo.html#condicao">Condição</a></li>
+                        <li><a href="algoritmo.html#alternativa">Alternativa Composta</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="algoritmo.html#repeticao">Estrutura de Repetição</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="algoritmo.html#enquanto">Enquanto .. faça</a></li>
+                                <li><a href="algoritmo.html#para">Para .. faça</a></li>
+                                <li><a href="algoritmo.html#repita">Repita .. até</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="computador">
+            <h2>Computador</h2>
+            <p>Máquina eficaz que processa informações automaticamente conforme pré-definidas.</p>
+            <img src="img/computador.gif" alt="computador" class="imagempc">
+        </section>
+        <section id="algo">
+            <h2>Algoritmo</h2>
+            <p>É um conjunto de instruções, como uma receita de bolo, constituído de um número finito de passos.</p>
+            <img src="img/algoritmo.png" alt="imagem algoritmo" class="imagemalgo">
+        </section>
+        <section id="lp">
+            <h2>Linguagem de programação</h2>
+            <p>Para que os dados sejam processados, há uma necessidade de utilizar uma linguagem de programação, pois os computadores não executam diretamente os algoritmos. Eles precisam ser transformados para uma linguagem de programação que será traduzida para uma linguagem de máquina.</p>
+            <img src="img/lp.png" alt="lp" class="imagempc">
+        </section>
+        <section id="bit">
+            <h2>Bit</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Decimal</td>
+                        <td>Binário</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0001</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0010</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0011</td>
+                    </tr>
+                    <tr>
+                       <td>4</td>
+                        <td>0100</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                         <td>0101</td>
+                     </tr>
+                     <tr>
+                        <td>6</td>
+                         <td>0110</td>
+                     </tr>
+                     <tr>
+                        <td>7</td>
+                         <td>0111</td>
+                     </tr>
+                     <tr>
+                        <td>8</td>
+                         <td>1000</td>
+                     </tr>
+                     <tr>
+                        <td>9</td>
+                         <td>1001</td>
+                     </tr>
+                     <tr>
+                        <td>10</td>
+                         <td>1010</td>
+                     </tr>
+                     <tr>
+                        <td>11</td>
+                         <td>1011</td>
+                     </tr>
+                     <tr>
+                        <td>12</td>
+                         <td>1100</td>
+                     </tr>
+                     <tr>
+                        <td>13</td>
+                         <td>1101</td>
+                     </tr>
+                     <tr>
+                        <td>14</td>
+                         <td>1110</td>
+                     </tr>
+                     <tr>
+                        <td>15</td>
+                         <td>1111</td>
+                     </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="byte">
+            <h2>Byte</h2>
+            <p>Conjunto de 8 bits. Memórias são medidas em bytes. Cada caractere é um byte.</p>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Medida</td>
+                        <td>Símbolo</td>
+                        <td>Caracteres</td>
+                        <td>Espaço</td>
+                    </tr>
+                    <tr>
+                        <td>Byte</td>
+                        <td>-</td>
+                        <td>1</td>
+                        <td>8 bits</td>
+                    </tr>
+                    <tr>
+                        <td>Kilobyte</td>
+                        <td>kb</td>
+                        <td>1024</td>
+                        <td>1024 bytes</td>
+                    </tr>
+                    <tr>
+                        <td>Megabyte</td>
+                        <td>mb</td>
+                        <td>1048576</td>
+                        <td>1024 kb</td>
+                    </tr>
+                    <tr>
+                        <td>Gigabyte</td>
+                        <td>gb</td>
+                        <td>1073741824</td>
+                        <td>1024 mb</td>
+                    </tr>
+                    <tr>
+                        <td>Terabyte</td>
+                        <td>tb</td>
+                        <td>1099511627776</td>
+                        <td>1024 gb</td>
+                    </tr>
+                    <tr>
+                        <td>Pentabyte</td>
+                        <td>pb</td>
+                        <td>1125899906842624</td>
+                        <td>1024 tb</td>
+                     </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="hardware">
+            <h2>Hardware</h2>
+            <p>Parte física do computador.</p>
+            <img src="img/hardware.gif" alt="hardware" class="imagempc">
+        </section>
+        <section id="software">
+            <h2>Software</h2>
+            <p>Programas de computador.</p>
+            <img src="img/software.jpg" alt="software" class="imagemalgo">
+        </section>
+        <section id="compilador">
+            <h2>Compilador</h2>
+            <p>Programas que transformam linguagens de programação para linguagem de máquina (o que nós vemos).</p>
+            <img src="img/compilador.png" alt="compilador">
+        </section>
+        <section id="pseudolinguagem">
+            <h2>Pseudolinguagem</h2>
+            <p>Comandos em português.</p>
+            <pre><code>
+                início
+                    inteiro a, b, c, d, i, x
+                    leia (a, b, c, d)
+                    para i de 1 até 5 faça
+                        se (a + b) > (c + d)
+                            x ← x + 1
+                        se não x ← x + 2
+                        a ← a + 2
+                        c ← c + 1
+                    fim para
+                    escreva (x)
+                fim
+            </code></pre>
+        </section>
+        <section id="variavel">
+            <h2>Variáveis</h2>
+            <p>Nos algoritmos cada variável corresponde a uma posição na memória cujo comando pode variar ao longo do tempo durante a execução de um programa. Embora uma variável possa assumir diferentes valores, ela só pode armazenar um único valor a cada instante. Toda variável é identificada por um nome ou identificador.</p>
+            <br>
+            <ul>
+                <li><strong>Inteiro:</strong> 1, 2, 3, 0, -3, -2, -1</p>
+                <li><strong>Real:</strong> 1.1, 1.9, 0.8, -8.9</li>
+                <li><strong>Caracter:</strong> “a”, “BC”, “x9” (só pode começar com letra, ou seja não pode ser “9x”)</li>
+                <li><strong>Lógico:</strong> F e V.</li>
+            </ul>
+        </section>
+        <section id="constante">
+            <h2>Constantes</h2>
+            <p>Numérica, lógica ou caractere.</p>
+        </section>
+        <section id="comentario">
+            <h2>Comentário</h2>
+            <p>Comentários feitos dentro de códigos.</p>
+            <div class="comentarios">
+                <img src="img/comentario.png" alt="comentario1">
+                <img src="img/comentario1.png" alt="comentario2">
+            </div>
+        </section>
+        <section id="comando">
+            <h2>Comando de atribuição</h2>
+            <pre><code>identificador ← expressão</code></pre>
+            <ul>
+                <li>Identificador: Nome da variável</li>
+                <li>Expressão: Pode ser uma expressão aritmética, lógica ou do tipo caractere, ou números.</li>
+            </ul>
+            <p>Exemplo:</p>
+            <pre>
+                <code>
+                    Nota ← 7.5
+                    x ← 2
+                    b ← x+1
+                    nome ← “ead”
+                </code>
+            </pre>
+        </section>
+        <section id="expressao">
+            <h2>Expressões Aritméticas e Operadores</h2>
+            <p>As expressões aritméticas são formadas por variáveis, constantes e operadores aritméticos.</p>
+            <pre><code>A ← B + 2 * C + ABS(B)</code></pre>
+            <p>Onde:</p>
+            <ul>
+                <li><strong>A, B e C:</strong> variáveis</li>
+                <li><strong>2:</strong> constante</li>
+                <li><strong>ABS():</strong> função</li>
+                <li><strong>+:</strong> adição</li>
+                <li><strong>*:</strong> multiplicação</li>
+            </ul>
+        </section>
+        <section id="logico">
+            <h2>Operadores Lógicos</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th colspan="3">Conjunção (E)</th>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th colspan="3">Disjunção (OU)</th>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th colspan="2">Negação (NÃO)</th>
+                    </tr>
+                    <tr>
+                        <td>não V</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>não F</td>
+                        <td>V</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Operadores Relacionais</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Operador</td>
+                        <td>Descrição</td>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Igualdade</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Maior</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Menor</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Menor igual</td>
+                    </tr>
+                    <tr>
+                       <td>&gt;=</td>
+                        <td>Maior igual</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                         <td>Diferente</td>
+                     </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="entrada">
+            <h2>Entrada e Saída</h2>
+            <h3>Entrada de dados (leia)</h3>
+            <p>Exemplo: leia(nota)</p>
+            <p>O algoritmo espera que se digite uma nota. Assim que for digitada, ela será armazenada na variável cujo o identificador é "nota".</p>
+            <br>
+            <h3>Saída de dados (escreva)</h3>
+            <p>Exemplo: escreva(media) ou escreva("A média é: ", media)</p>
+            <p>No exemplo, o valor armazenado na variável "media" será mostrado.</p>
+        </section>
+    </main>
+</body>
+</html>
