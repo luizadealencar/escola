@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Algoritmo, Lógica e Programação</h1>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+        <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
         <nav>
             <ul class="navbar">
                 <li>Início</li>
@@ -39,7 +42,7 @@
                         <li><a href="definições.html#entrada">Entrada e Saída</a></li>
                     </ul>
                 </li>
-                
+
                 <li class="dropdown">
                     Algoritmo
                     <ul class="dropdown-content">
@@ -57,7 +60,7 @@
                     </ul>
                 </li>
             </ul>
-        </nav>        
+        </nav>
     </header>
     <main>
         <section id="computador">
@@ -72,7 +75,9 @@
         </section>
         <section id="lp">
             <h2>Linguagem de programação</h2>
-            <p>Para que os dados sejam processados, há uma necessidade de utilizar uma linguagem de programação, pois os computadores não executam diretamente os algoritmos. Eles precisam ser transformados para uma linguagem de programação que será traduzida para uma linguagem de máquina.</p>
+            <p>Para que os dados sejam processados, há uma necessidade de utilizar uma linguagem de programação, pois os
+                computadores não executam diretamente os algoritmos. Eles precisam ser transformados para uma linguagem
+                de programação que será traduzida para uma linguagem de máquina.</p>
             <img src="img/lp.png" alt="lp" class="imagempc">
         </section>
         <section id="bit">
@@ -100,53 +105,53 @@
                         <td>0011</td>
                     </tr>
                     <tr>
-                       <td>4</td>
+                        <td>4</td>
                         <td>0100</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                         <td>0101</td>
-                     </tr>
-                     <tr>
+                        <td>0101</td>
+                    </tr>
+                    <tr>
                         <td>6</td>
-                         <td>0110</td>
-                     </tr>
-                     <tr>
+                        <td>0110</td>
+                    </tr>
+                    <tr>
                         <td>7</td>
-                         <td>0111</td>
-                     </tr>
-                     <tr>
+                        <td>0111</td>
+                    </tr>
+                    <tr>
                         <td>8</td>
-                         <td>1000</td>
-                     </tr>
-                     <tr>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
                         <td>9</td>
-                         <td>1001</td>
-                     </tr>
-                     <tr>
+                        <td>1001</td>
+                    </tr>
+                    <tr>
                         <td>10</td>
-                         <td>1010</td>
-                     </tr>
-                     <tr>
+                        <td>1010</td>
+                    </tr>
+                    <tr>
                         <td>11</td>
-                         <td>1011</td>
-                     </tr>
-                     <tr>
+                        <td>1011</td>
+                    </tr>
+                    <tr>
                         <td>12</td>
-                         <td>1100</td>
-                     </tr>
-                     <tr>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
                         <td>13</td>
-                         <td>1101</td>
-                     </tr>
-                     <tr>
+                        <td>1101</td>
+                    </tr>
+                    <tr>
                         <td>14</td>
-                         <td>1110</td>
-                     </tr>
-                     <tr>
+                        <td>1110</td>
+                    </tr>
+                    <tr>
                         <td>15</td>
-                         <td>1111</td>
-                     </tr>
+                        <td>1111</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -196,7 +201,7 @@
                         <td>pb</td>
                         <td>1125899906842624</td>
                         <td>1024 tb</td>
-                     </tr>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -219,28 +224,32 @@
             <h2>Pseudolinguagem</h2>
             <p>Comandos em português.</p>
             <pre><code>
-                início
-                    inteiro a, b, c, d, i, x
-                    leia (a, b, c, d)
-                    para i de 1 até 5 faça
-                        se (a + b) > (c + d)
-                            x ← x + 1
-                        se não x ← x + 2
-                        a ← a + 2
-                        c ← c + 1
-                    fim para
-                    escreva (x)
-                fim
+    início
+        inteiro a, b, c, d, i, x
+        leia (a, b, c, d)
+        para i de 1 até 5 faça
+            se (a + b) > (c + d)
+                x ← x + 1
+            se não x ← x + 2
+            a ← a + 2
+            c ← c + 1
+        fim para
+        escreva (x)
+    fim
             </code></pre>
         </section>
         <section id="variavel">
             <h2>Variáveis</h2>
-            <p>Nos algoritmos cada variável corresponde a uma posição na memória cujo comando pode variar ao longo do tempo durante a execução de um programa. Embora uma variável possa assumir diferentes valores, ela só pode armazenar um único valor a cada instante. Toda variável é identificada por um nome ou identificador.</p>
+            <p>Nos algoritmos cada variável corresponde a uma posição na memória cujo comando pode variar ao longo do
+                tempo durante a execução de um programa. Embora uma variável possa assumir diferentes valores, ela só
+                pode armazenar um único valor a cada instante. Toda variável é identificada por um nome ou
+                identificador.</p>
             <br>
             <ul>
                 <li><strong>Inteiro:</strong> 1, 2, 3, 0, -3, -2, -1</p>
                 <li><strong>Real:</strong> 1.1, 1.9, 0.8, -8.9</li>
-                <li><strong>Caracter:</strong> “a”, “BC”, “x9” (só pode começar com letra, ou seja não pode ser “9x”)</li>
+                <li><strong>Caracter:</strong> “a”, “BC”, “x9” (só pode começar com letra, ou seja não pode ser “9x”)
+                </li>
                 <li><strong>Lógico:</strong> F e V.</li>
             </ul>
         </section>
@@ -258,7 +267,7 @@
         </section>
         <section id="comando">
             <h2>Comando de atribuição</h2>
-            <pre><code>identificador ← expressão</code></pre>
+            <pre><code class="center">identificador ← expressão</code></pre>
             <ul>
                 <li>Identificador: Nome da variável</li>
                 <li>Expressão: Pode ser uma expressão aritmética, lógica ou do tipo caractere, ou números.</li>
@@ -266,17 +275,17 @@
             <p>Exemplo:</p>
             <pre>
                 <code>
-                    Nota ← 7.5
-                    x ← 2
-                    b ← x+1
-                    nome ← “ead”
+    Nota ← 7.5
+    x ← 2
+    b ← x+1
+    nome ← “ead”
                 </code>
             </pre>
         </section>
         <section id="expressao">
             <h2>Expressões Aritméticas e Operadores</h2>
             <p>As expressões aritméticas são formadas por variáveis, constantes e operadores aritméticos.</p>
-            <pre><code>A ← B + 2 * C + ABS(B)</code></pre>
+            <pre><code class="center">A ← B + 2 * C + ABS(B)</code></pre>
             <p>Onde:</p>
             <ul>
                 <li><strong>A, B e C:</strong> variáveis</li>
@@ -288,77 +297,79 @@
         </section>
         <section id="logico">
             <h2>Operadores Lógicos</h2>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <th colspan="3">Conjunção (E)</th>
-                    </tr>
-                    <tr>
-                        <td>V</td>
-                        <td>V</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>V</td>
-                        <td>F</td>
-                        <td>F</td>
-                    </tr>
-                    <tr>
-                        <td>F</td>
-                        <td>V</td>
-                        <td>F</td>
-                    </tr>
-                    <tr>
-                        <td>F</td>
-                        <td>F</td>
-                        <td>F</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <th colspan="3">Disjunção (OU)</th>
-                    </tr>
-                    <tr>
-                        <td>V</td>
-                        <td>V</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>V</td>
-                        <td>F</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>F</td>
-                        <td>V</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>F</td>
-                        <td>F</td>
-                        <td>F</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <th colspan="2">Negação (NÃO)</th>
-                    </tr>
-                    <tr>
-                        <td>não V</td>
-                        <td>F</td>
-                    </tr>
-                    <tr>
-                        <td>não F</td>
-                        <td>V</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tables">
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">Conjunção (E)</th>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>V</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>V</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">Disjunção (OU)</th>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>V</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>F</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>V</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Negação (NÃO)</th>
+                        </tr>
+                        <tr>
+                            <td>não V</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>não F</td>
+                            <td>V</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section>
             <h2>Operadores Relacionais</h2>
@@ -385,13 +396,13 @@
                         <td>Menor igual</td>
                     </tr>
                     <tr>
-                       <td>&gt;=</td>
+                        <td>&gt;=</td>
                         <td>Maior igual</td>
                     </tr>
                     <tr>
                         <td>!=</td>
-                         <td>Diferente</td>
-                     </tr>
+                        <td>Diferente</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -399,7 +410,8 @@
             <h2>Entrada e Saída</h2>
             <h3>Entrada de dados (leia)</h3>
             <p>Exemplo: leia(nota)</p>
-            <p>O algoritmo espera que se digite uma nota. Assim que for digitada, ela será armazenada na variável cujo o identificador é "nota".</p>
+            <p>O algoritmo espera que se digite uma nota. Assim que for digitada, ela será armazenada na variável cujo o
+                identificador é "nota".</p>
             <br>
             <h3>Saída de dados (escreva)</h3>
             <p>Exemplo: escreva(media) ou escreva("A média é: ", media)</p>
@@ -407,4 +419,5 @@
         </section>
     </main>
 </body>
+
 </html>
