@@ -286,6 +286,11 @@ tr:nth-child(odd) {
     max-width: 100%;
     border-bottom: 1px solid #ddd;
     text-align: end;
+    margin: 0;
+    padding-right: 0;
+  }
+  .navbar li a {
+    padding: 0;
   }
 
   .dropdown-content {
