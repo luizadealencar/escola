@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">Biblioteca</a></h1>
+    </nav>
+  </header>
+  <section>
+    <h2>Bibliotecas Padrão do C</h2>
+    <p>
+      O C fornece diversas bibliotecas pré-definidas que facilitam o desenvolvimento de programas. As bibliotecas mais
+      utilizadas são:
+    </p>
+    <table border="1">
+      <tr>
+        <th>Biblioteca</th>
+        <th>Descrição</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>stdio.h</td>
+          <td>Entrada/Saída padrão</td>
+        </tr>
+        <tr>
+          <td>stdlib.h</td>
+          <td>Utilitários</td>
+        </tr>
+        <tr>
+          <td>math.h</td>
+          <td>Matemática</td>
+        </tr>
+        <tr>
+          <td>ctype.h</td>
+          <td>Classificação de caracteres</td>
+        </tr>
+        <tr>
+          <td>string.h</td>
+          <td>Manipulação de strings</td>
+        </tr>
+      </tbody>
+    </table>
+    </table>
+    <br>
+    <ul>
+      <li>
+        <h3><strong>stdio.h</strong></h3>
+        <ul>
+          <li><strong>Entrada/saída formatadas:</strong></li>
+          <ul>
+            <li>printf: imprime dados formatados na saída padrão (monitor)</li>
+            <li>scanf: lê dados formatados da entrada padrão (teclado)</li>
+          </ul><br>
+          <li><strong>Entrada/saída de caracteres:</strong></li>
+          <ul>
+            <li>getchar: lê um caractere da entrada padrão (teclado)</li>
+            <li>gets: lê uma string da entrada padrão (teclado)</li>
+            <li>putc: escreve um caractere na saída padrão (monitor)</li>
+            <li>putchar: escreve um caractere na saíıda padrão (monitor)</li>
+            <li>puts: escreve uma string na saída padrão (monitor)</li>
+            <li>ungetc: retorna um caractere lido para o arquivo dele</li>
+          </ul><br>
+          <li><strong>Tratamento de erros:</strong></li>
+          <ul>
+            <li>feof: indicador de fim-de-arquivo</li>
+            <li>ferror: indicador de checagem de erro</li>
+          </ul><br>
+          <li><strong>Tipos e macros:</strong></li>
+          <ul>
+            <li>NULL: ponteiro nulo</li>
+            <li>IFDEF: biblioteca definida.</li>
+          </ul><br>
+        </ul>
+      </li>
+      <li>
+        <h3>stdlib.h</h3>
+        <ul>
+          <li><strong>Conversão de strings:</strong></li>
+          <ul>
+            <li>atof: converte string para double</li>
+            <li>atoi: converte string para inteiro</li>
+            <li>atol: converte string para inteiro longo</li>
+            <li>strtod: converte string para double e devolve um ponteiro para o próximo double contido na string</li>
+            <li>strtol: converte string para inteiro longo e devolve um ponteiro para o próximo inteiro longo contido na
+              string</li>
+            <li>strtoul: converte string para inteiro longo sem sinal e devolve um ponteiro para o próximo inteiro longo
+              sem sinal contido na string</li>
+          </ul><br>
+          <li><strong>Geração de sequências pseudo-aleatórias:</strong></li>
+          <ul>
+            <li>rand: gera número aleatório</li>
+            <li>srand: inicializa o gerador de números aleatórios</li>
+          </ul><br>
+          <li><strong>Gerenciamento de memória dinâmica:</strong></li>
+          <ul>
+            <li>malloc: aloca espaço para um array na memória</li>
+            <li>calloc: aloca espaço para um array na memoria e inicializar com zeros</li>
+            <li>free: libera o espaço alocado na memória</li>
+            <li>realloc: modifica o tamanho do espaço alocado na memória</li>
+          </ul><br>
+          <li><strong>Ambiente do programa:</strong></li>
+          <ul>
+            <li>exit: finaliza o programa</li>
+            <li>system: executa um comando do sistema</li>
+          </ul><br>
+          <li><strong>Pesquisa e ordenação:</strong></li>
+          <ul>
+            <li>qsort: ordena os elementos do array</li>
+          </ul><br>
+          <li><strong>Aritmética de inteiro:</strong></li>
+          <ul>
+            <li>abs: valor absoluto</li>
+          </ul><br>
+        </ul>
+      </li>
+      <li>
+        <h3>math.h</h3>
+        <ul>
+          <li><strong>Funções trigonométricas:</strong></li>
+          <ul>
+            <li>cos: calcula o cosseno de um ângulo em radianos</li>
+            <li>sin: calcula o seno de um ângulo em radianos</li>
+            <li>tan: calcula a tangente de um ângulo em radianos</li>
+            <li>acos: calcula o arco cosseno</li>
+            <li>asin: calcula o arco seno</li>
+            <li>atan: calcula o arco tangente</li>
+            <li>atan2: calcula o arco tangente com dois parâmetros</li>
+          </ul><br>
+          <li><strong>Funções hiperbólicas:</strong></li>
+          <ul>
+            <li>cosh: calcula o cosseno hiperbolico de um ângulo em radianos</li>
+            <li>sinh: calcula o seno hiperbolico de um ângulo em radianos</li>
+            <li>tanh: calcula a tangente hiperbólica de um ângulo em radianos</li>
+          </ul><br>
+          <li><strong>Funções exponenciais e logarítmicas:</strong></li>
+          <ul>
+            <li>exp: função exponencial<< /li>
+            <li>log: logaritmo natural</li>
+            <li>log10: logaritmo comum (base 10)</li>
+            <li>modf: quebra um número em partes fracionárias e inteira</li>
+          </ul><br>
+          <li><strong>Funções de potência:</strong></li>
+          <ul>
+            <li>pow: retorna a base elevada ao expoente</li>
+            <li>sqrt: raiz quadrada de um número</li>
+          </ul><br>
+          <li><strong>Funções de arredondamento, valor absoluto e outras:</strong></li>
+          <ul>
+            <li>ceil: arredonda para cima um número</li>
+            <li>fabs: calcula o valor absoluto de um número</li>
+            <li>floor: arredonda para baixo um número</li>
+            <li>fmod: calcula o resto da divisão</li>
+          </ul><br>
+        </ul>
+      </li>
+      <li>
+        <h3>ctype.h</h3>
+        <ul>
+          <li><strong>Testes de tipos de caracteres:</strong></li>
+          <ul>
+            <li>isalpha: verifica se o caractere é alfabético</li>
+            <li>tolower: converte letra maiúscula para minúscula</li>
+            <li>toupper: converte letra minúscula para maiúscula</li>
+          </ul>
+        </ul><br>
+      </li>
+      <li>
+        <h3>string.h</h3>
+        <ul>
+          <li><strong>Cópia:</strong></li>
+          <ul>
+            <li>memcpy: cópia de bloco de memória</li>
+            <li>memmove: move bloco de memória</li>
+            <li>strcpy: copia de string</li>
+            <li>strncpy: cópia de caracteres da string</li>
+          </ul><br>
+          <li><strong>Concatenação:</strong></li>
+          <ul>
+            <li>strcat: concatenação de strings</li>
+            <li>strncat: adiciona “n” caracteres de uma string no final de outra string</li>
+          </ul><br>
+          <li><strong>Comparação:</strong></li>
+          <ul>
+            <li>memcmp: compara dois blocos de memória</li>
+            <li>strcmp: compara duas strings</li>
+            <li>strncmp: compara os “n” caracteres de duas strings</li>
+          </ul><br>
+          <li><strong>Busca:</strong></li>
+          <ul>
+            <li>memchr: localiza caractere em bloco de memória</li>
+            <li>strchr: localiza primeira ocorrência de caractere em uma string</li>
+            <li>strcspn: retorna o número de caracteres lidos de uma string antes da primeira ocorrência de uma segunda
+              string</li>
+            <li>strpbrk: retorna um ponteiro para a primeira ocorrência na string de qualquer um dos caracteres de uma
+              segunda string</li>
+            <li>strrchr: retorna um ponteiro para a última ocorrência do caractere na string</li>
+            <li>strspn: retorna o comprimento da string que consiste só de caracteres que fazem parte de uma outra
+              string</li>
+            <li>strtok: divide uma string em sub-strings com base em um caractere</li>
+          </ul><br>
+          <li><strong>Outras:</strong></li>
+          <ul>
+            <li>memset: preenche bloco de memória com valor especificado</li>
+            <li>strerror: retorna o ponteiro para uma string de mensagem de erro</li>
+            <li>strlen: comprimento da string</li>
+          </ul>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <button class="btn"><a href="introducao.html">Voltar</a></button>
+</body>
+
+</html>

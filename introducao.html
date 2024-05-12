@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguagem</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Linguagem de Programação</a></h1>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown">
+                    Ementa
+                    <ul class="dropdown-content">
+                        <li><a href="lp.html#objetivo">Objetivos</a></li>
+                        <li><a href="lp.html#ementa">Ementa</a></li>
+                        <li><a href="lp.html#competencia">Competências</a></li>
+                        <li><a href="lp.html#habilidades">Habilidades</a></li>
+                        <li><a href="lp.html#base">Bases Tecnológicas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Introdução à Linguagem de Programação
+                    <ul class="dropdown-content">
+                        <li><a href="introducao.html"></a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Linguagem de C</h2>
+            <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;stdlib.h&gt;
+          
+    int main(){
+        printf("Hello World \n");
+        system("pause");
+        return 0;
+    }
+            </pre>
+            <p>
+                1. Declarações globais: bibliotecas usadas pelo programa:<br>
+            <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;stdlib.h&gt;
+            </pre>
+            2. Inicio do programa:<br>
+            <pre>
+    int main(){
+                </pre>
+            3. Escreve uma mensagem na tela de saida:<br>
+            <pre>
+    printf("Hello World \n");
+            </pre>
+            4. Faz uma pausa antes de terminar o programa:<br>
+            <pre>
+    system("pause");
+            </pre>
+            5. Retoma o código do erro zero para o Sistema Operacional informando que está tudo ok:<br>
+            <pre>
+    return 0;
+            </pre>
+            6. Fim do programa:<br>
+            <pre>
+    }
+            </pre>
+            </p>
+        </section>
+
+        <section>
+            <h2>Indentação</h2>
+            <p>
+                A indentação é o espaçamento (ou tabulação) colocado antes de começar a escrever o código na linha. Ele
+                tem como objetivo indicar a hierarquia dos elementos. No nosso exemplo, os comandos printf, system e
+                return possuem a mesma hierarquia (portanto o mesmo espaçamento) e estão todos contidos dentro do
+                comando main() (daí o porque do espaçamento).
+            </p>
+        </section>
+
+        <section>
+            <h1>Comentários</h1>
+            <p>
+                Existem comentários de linha única (//) e comentários de bloco (/* */).
+            </p>
+            <table border="1" class="introducao-comentario">
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;stdlib.h&gt;
+            
+    int main(){
+        printf("Hello World \n"); //Imprime "Hello World"
+        system("pause");
+        return 0;
+    }
+                            </pre>
+                        </td>
+                        <td>
+                            <pre>
+    /* #include &lt;stdio.h&gt;
+    #include &lt;stdlib.h&gt;
+            
+    int main(){
+        printf("Hello World \n"); //Imprime "Hello World"
+        system("pause");
+        return 0;
+    } */
+                            </pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Biblioteca</h2>
+            <p>A biblioteca é o comando <strong>#include</strong> utilizado para declarar as bibliotecas que serão
+                utilizadas pelo programa. Abaixo temos dois exemplos do uso do comando #include:</p>
+            <ul>
+                <li>#include &lt;stdio.h&gt - adiciona uma biblioteca do sistema: stdio.h (que contém as funções de
+                    leitura do teclado e escrita em tela).</li>
+                <li>#include "D:\Programas\soma.h" - adiciona uma biblioteca de nome soma.h, localizada no diretório
+                    "D:\Programas\".</li>
+            </ul>
+            <p>Aqui contêm o link para todas as Bibliotecas mais comuns que são usadas:</p>
+            <button class="btn"><a href="biblioteca.html">Clique aqui.</a></button>
+        </section>
+
+        <section>
+            <h2>Variáveis</h2>
+            <pre>
+    tipo_da_variavel nome_da_variavel;
+            </pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Tamanho (bits)</th>
+                        <th>Intervalo</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>char</td>
+                        <td>8</td>
+                        <td>-128 a 127</td>
+                        <td>char c = 'a';</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>32</td>
+                        <td>-2.147.483.648 a 2.147.483.647</td>
+                        <td>int n = 1459;</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>32</td>
+                        <td>1.175494E-38 a 3.402823E+38</td>
+                        <td>float f = 5.25;</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>64</td>
+                        <td>2.225074E-308 a 1.797693E+308</td>
+                        <td>double d = 15.673;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Escreva</h2>
+            <p>Quando for texto:</p>
+            <pre>
+    printf("Texto")
+            </pre>
+            <p>Quando for valores:</p>
+            <pre>
+    printf("%tipo_de_saida", expressão1);
+    printf("%tipo1 %tipo2", expressão1, expressão2);
+            </pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Saída</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>%c</td>
+                        <td>escrita de um caractere</td>
+                    </tr>
+                    <tr>
+                        <td>%d ou %i</td>
+                        <td>escrita de números inteiros</td>
+                    </tr>
+                    <tr>
+                        <td>%u</td>
+                        <td>escrita de números inteiros sem sinal</td>
+                    </tr>
+                    <tr>
+                        <td>%f</td>
+                        <td>escrita de número reais</td>
+                    </tr>
+                    <tr>
+                        <td>%s</td>
+                        <td>escrita de vários caracteres</td>
+                    </tr>
+                    <tr>
+                        <td>%p</td>
+                        <td>escrita de um endereco de memoria</td>
+                    </tr>
+                    <tr>
+                        <td>%e ou %E</td>
+                        <td>escrita em notação científica</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Exemplos:</p>
+            <table border="1" class="introducao-comentario">
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>
+int x = 10;
+float y = 5.0;
+printf("%d %f\n", x, y);
+                            </pre>
+                        </td>
+                        <td>
+                            <pre>
+int x = 10;
+printf("Total = %d\n", x);
+printf("%d caixas\n", x);
+printf("Total de %d caixas\n", x);
+                            </pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Leia</h2>
+            <pre>
+    scanf("%tipo_de_entrada", &variável);
+    scanf("%tipo1 %tipo2", &var1, &var2);
+            </pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Alguns "tipos de entrada"</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>%c</td>
+                        <td>Leitura de um caractere</td>
+                    </tr>
+                    <tr>
+                        <td>%d ou %i</td>
+                        <td>Leitura de números inteiros<br> (%d para signed, %i for signed or
+                            unsigned)</td>
+                    </tr>
+                    <tr>
+                        <td>%f</td>
+                        <td>Leitura de números reais</td>
+                    </tr>
+                    <tr>
+                        <td>%s</td>
+                        <td>Leitura de uma string (sequência de caracteres)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Exemplo</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>
+scanf("%d %d", &x, &z);
+                            </pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
