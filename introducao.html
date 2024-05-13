@@ -14,11 +14,14 @@
 
 <body>
     <header>
-        <h1><a href="index.html">Linguagem de Programação</a></h1>
+        <h1>Linguagem de Programação</h1>
         <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
         <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
         <nav>
             <ul class="navbar">
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
                 <li class="dropdown">
                     Ementa
                     <ul class="dropdown-content">
@@ -32,15 +35,19 @@
                 <li class="dropdown">
                     Introdução à Linguagem de Programação
                     <ul class="dropdown-content">
-                        <li><a href="introducao.html"></a></li>
-
+                        <li><a href="introducao.html#linguagem-c">Linguagem de C</a></li>
+                        <li><a href="introducao.html#indentacao">Indentação</a></li>
+                        <li><a href="introducao.html#coment">Comentários</a></li>
+                        <li><a href="introducao.html#biblioteca">Biblioteca</a></li>
+                        <li><a href="introducao.html#escreva">Escreva</a></li>
+                        <li><a href="introducao.html#leia">Leia</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="introducao">
+        <section id="linguagem-c">
             <h2>Linguagem de C</h2>
             <pre>
     #include &lt;stdio.h&gt;
@@ -81,7 +88,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="indentacao">
             <h2>Indentação</h2>
             <p>
                 A indentação é o espaçamento (ou tabulação) colocado antes de começar a escrever o código na linha. Ele
@@ -91,72 +98,70 @@
             </p>
         </section>
 
-        <section>
+        <section id="coment">
             <h1>Comentários</h1>
             <p>
                 Existem comentários de linha única (//) e comentários de bloco (/* */).
             </p>
-            <table border="1" class="introducao-comentario">
-                <tbody>
-                    <tr>
-                        <td>
-                            <pre>
-    #include &lt;stdio.h&gt;
-    #include &lt;stdlib.h&gt;
-            
-    int main(){
-        printf("Hello World \n"); //Imprime "Hello World"
-        system("pause");
-        return 0;
-    }
-                            </pre>
-                        </td>
-                        <td>
-                            <pre>
-    /* #include &lt;stdio.h&gt;
-    #include &lt;stdlib.h&gt;
-            
-    int main(){
-        printf("Hello World \n"); //Imprime "Hello World"
-        system("pause");
-        return 0;
-    } */
-                            </pre>
-                        </td>
-                    </tr>
-                </tbody>
+            <table class="introducao-comentario tables">
+                <tr>
+                    <td>
+                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    printf("Hello World\n"); // Imprime "Hello World"
+    system("pause");
+    return 0;
+}
+                      </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+/* #include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    printf("Hello World\n"); // Imprime "Hello World"
+    system("pause");
+    return 0;
+} */
+                      </pre>
+                    </td>
+                </tr>
             </table>
         </section>
 
-        <section>
+        <section id="biblioteca">
             <h2>Biblioteca</h2>
             <p>A biblioteca é o comando <strong>#include</strong> utilizado para declarar as bibliotecas que serão
                 utilizadas pelo programa. Abaixo temos dois exemplos do uso do comando #include:</p>
             <ul>
-                <li>#include &lt;stdio.h&gt - adiciona uma biblioteca do sistema: stdio.h (que contém as funções de
+                <li>#include &lt;stdio.h&gt; - adiciona uma biblioteca do sistema: stdio.h (que contém as funções de
                     leitura do teclado e escrita em tela).</li>
                 <li>#include "D:\Programas\soma.h" - adiciona uma biblioteca de nome soma.h, localizada no diretório
                     "D:\Programas\".</li>
             </ul>
             <p>Aqui contêm o link para todas as Bibliotecas mais comuns que são usadas:</p>
-            <button class="btn"><a href="biblioteca.html">Clique aqui.</a></button>
+            <button class="biblioteca"><a href="biblioteca.html">Clique aqui.</a></button>
         </section>
 
-        <section>
+        <section id="variavel-lp">
             <h2>Variáveis</h2>
             <pre>
     tipo_da_variavel nome_da_variavel;
             </pre>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Tamanho (bits)</th>
-                        <th>Intervalo</th>
-                        <th>Exemplo</th>
-                    </tr>
-                </thead>
+            <table border="1" class="tables">
                 <tbody>
+                    <tr>
+                        <td><strong>Tipo</strong></td>
+                        <td><strong>Tamanho (bits)</strong></td>
+                        <td><strong>Intervalo</strong></td>
+                        <td><strong>Exemplo</strong></td>
+                    </tr>
                     <tr>
                         <td>char</td>
                         <td>8</td>
@@ -184,25 +189,24 @@
                 </tbody>
             </table>
         </section>
-        <section>
+
+        <section id="escreva">
             <h2>Escreva</h2>
             <p>Quando for texto:</p>
             <pre>
-    printf("Texto")
+printf("Texto")
             </pre>
             <p>Quando for valores:</p>
             <pre>
-    printf("%tipo_de_saida", expressão1);
-    printf("%tipo1 %tipo2", expressão1, expressão2);
+printf("%tipo_de_saida", expressão1);
+printf("%tipo1 %tipo2", expressão1, expressão2);
             </pre>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo de Saída</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
+            <table border="1" class="tables">
                 <tbody>
+                    <tr>
+                        <td><strong>Tipo de Saída</strong></td>
+                        <td><strong>Descrição</strong></td>
+                    </tr>
                     <tr>
                         <td>%c</td>
                         <td>escrita de um caractere</td>
@@ -234,41 +238,30 @@
                 </tbody>
             </table>
             <p>Exemplos:</p>
-            <table border="1" class="introducao-comentario">
-                <tbody>
-                    <tr>
-                        <td>
-                            <pre>
+            <pre>
 int x = 10;
 float y = 5.0;
 printf("%d %f\n", x, y);
                             </pre>
-                        </td>
-                        <td>
-                            <pre>
+
+            <pre>
 int x = 10;
 printf("Total = %d\n", x);
 printf("%d caixas\n", x);
 printf("Total de %d caixas\n", x);
                             </pre>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </section>
-        <section>
+        <section id="leia">
             <h2>Leia</h2>
             <pre>
     scanf("%tipo_de_entrada", &variável);
     scanf("%tipo1 %tipo2", &var1, &var2);
             </pre>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Alguns "tipos de entrada"</th>
-                    </tr>
-                </thead>
+            <table border="1" class="tables">
                 <tbody>
+                    <tr>
+                        <td colspan="2"><strong>Alguns "tipos de entrada"</strong></td>
+                    </tr>
                     <tr>
                         <td>%c</td>
                         <td>Leitura de um caractere</td>
@@ -288,18 +281,10 @@ printf("Total de %d caixas\n", x);
                     </tr>
                 </tbody>
             </table>
-            <p>Exemplo</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <pre>
+            <p>Exemplo:</p>
+                        <pre>
 scanf("%d %d", &x, &z);
-                            </pre>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        </pre>
         </section>
     </main>
 </body>
