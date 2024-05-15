@@ -41,6 +41,8 @@
                         <li><a href="introducao.html#biblioteca">Biblioteca</a></li>
                         <li><a href="introducao.html#escreva">Escreva</a></li>
                         <li><a href="introducao.html#leia">Leia</a></li>
+                        <li><a href="introducao.html#op-rel">Operadores relacionais</a></li>
+                        <li><a href="introducao.html#logico">Operadores lógicos</a></li>
                     </ul>
                 </li>
             </ul>
@@ -88,7 +90,7 @@
             </p>
         </section>
 
-        <section id="indentacao">
+        <section class="div-cor" id="indentacao">
             <h2>Indentação</h2>
             <p>
                 A indentação é o espaçamento (ou tabulação) colocado antes de começar a escrever o código na linha. Ele
@@ -100,42 +102,48 @@
 
         <section id="coment">
             <h1>Comentários</h1>
-            <p>
-                Existem comentários de linha única (//) e comentários de bloco (/* */).
-            </p>
-            <table class="introducao-comentario tables">
-                <tr>
-                    <td>
-                        <pre>
-#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-int main() {
-    printf("Hello World\n"); // Imprime "Hello World"
-    system("pause");
-    return 0;
-}
-                      </pre>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <pre>
-/* #include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-int main() {
-    printf("Hello World\n"); // Imprime "Hello World"
-    system("pause");
-    return 0;
-} */
-                      </pre>
-                    </td>
-                </tr>
-            </table>
+            <div class="div-section var-def">
+                <div class="table-def">
+                    <table class="introducao-comentario table-def">
+                        <tr>
+                            <td>
+                                <pre>
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        
+        int main() {
+            printf("Hello World\n"); // Imprime "Hello World"
+            system("pause");
+            return 0;
+        }
+                              </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre>
+        /* #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        
+        int main() {
+            printf("Hello World\n"); // Imprime "Hello World"
+            system("pause");
+            return 0;
+        } */
+                              </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="texto-direita">
+                    <p>
+                        Existem comentários de linha única (//) e comentários de bloco (/* */).
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="biblioteca">
+        <section class="div-cor" id="biblioteca">
             <h2>Biblioteca</h2>
             <p>A biblioteca é o comando <strong>#include</strong> utilizado para declarar as bibliotecas que serão
                 utilizadas pelo programa. Abaixo temos dois exemplos do uso do comando #include:</p>
@@ -151,92 +159,117 @@ int main() {
 
         <section id="variavel-lp">
             <h2>Variáveis</h2>
-            <pre>
-    tipo_da_variavel nome_da_variavel;
-            </pre>
-            <table border="1" class="tables">
-                <tbody>
-                    <tr>
-                        <td><strong>Tipo</strong></td>
-                        <td><strong>Tamanho (bits)</strong></td>
-                        <td><strong>Intervalo</strong></td>
-                        <td><strong>Exemplo</strong></td>
-                    </tr>
-                    <tr>
-                        <td>char</td>
-                        <td>8</td>
-                        <td>-128 a 127</td>
-                        <td>char c = 'a';</td>
-                    </tr>
-                    <tr>
-                        <td>int</td>
-                        <td>32</td>
-                        <td>-2.147.483.648 a 2.147.483.647</td>
-                        <td>int n = 1459;</td>
-                    </tr>
-                    <tr>
-                        <td>float</td>
-                        <td>32</td>
-                        <td>1.175494E-38 a 3.402823E+38</td>
-                        <td>float f = 5.25;</td>
-                    </tr>
-                    <tr>
-                        <td>double</td>
-                        <td>64</td>
-                        <td>2.225074E-308 a 1.797693E+308</td>
-                        <td>double d = 15.673;</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="div-section var-def">
+                <div class="table-def">
+                    <table class="table-def">
+                        <tbody>
+                            <tr>
+                                <td><strong>Tipo</strong></td>
+                                <td><strong>Tamanho (bits)</strong></td>
+                                <td><strong>Intervalo</strong></td>
+                                <td><strong>Exemplo</strong></td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>8</td>
+                                <td>-128 a 127</td>
+                                <td>char c = 'a';</td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>32</td>
+                                <td>-2.147.483.648 a 2.147.483.647</td>
+                                <td>int n = 1459;</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>32</td>
+                                <td>1.175494E-38 a 3.402823E+38</td>
+                                <td>float f = 5.25;</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>64</td>
+                                <td>2.225074E-308 a 1.797693E+308</td>
+                                <td>double d = 15.673;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="texto-direita">
+                    <pre><code>
+tipo_da_variavel nome_da_variavel;
+                    </code></pre>
+                </div>
+            </div>
+
+
         </section>
 
-        <section id="escreva">
+        <section class="div-cor" id="escreva">
             <h2>Escreva</h2>
-            <p>Quando for texto:</p>
-            <pre>
+            <div class="div-section var-def">
+                <div class="table-def">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Quando for texto:</p>
+                                <pre><code>
 printf("Texto")
-            </pre>
-            <p>Quando for valores:</p>
-            <pre>
+            </code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Quando for valores:</p>
+                                <pre><code>
 printf("%tipo_de_saida", expressão1);
 printf("%tipo1 %tipo2", expressão1, expressão2);
-            </pre>
-            <table border="1" class="tables">
-                <tbody>
-                    <tr>
-                        <td><strong>Tipo de Saída</strong></td>
-                        <td><strong>Descrição</strong></td>
-                    </tr>
-                    <tr>
-                        <td>%c</td>
-                        <td>escrita de um caractere</td>
-                    </tr>
-                    <tr>
-                        <td>%d ou %i</td>
-                        <td>escrita de números inteiros</td>
-                    </tr>
-                    <tr>
-                        <td>%u</td>
-                        <td>escrita de números inteiros sem sinal</td>
-                    </tr>
-                    <tr>
-                        <td>%f</td>
-                        <td>escrita de número reais</td>
-                    </tr>
-                    <tr>
-                        <td>%s</td>
-                        <td>escrita de vários caracteres</td>
-                    </tr>
-                    <tr>
-                        <td>%p</td>
-                        <td>escrita de um endereco de memoria</td>
-                    </tr>
-                    <tr>
-                        <td>%e ou %E</td>
-                        <td>escrita em notação científica</td>
-                    </tr>
-                </tbody>
-            </table>
+                                </code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-def">
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td><strong>Tipo de Saída</strong></td>
+                                <td><strong>Descrição</strong></td>
+                            </tr>
+                            <tr>
+                                <td>%c</td>
+                                <td>escrita de um caractere</td>
+                            </tr>
+                            <tr>
+                                <td>%d ou %i</td>
+                                <td>escrita de números inteiros</td>
+                            </tr>
+                            <tr>
+                                <td>%u</td>
+                                <td>escrita de números inteiros sem sinal</td>
+                            </tr>
+                            <tr>
+                                <td>%f</td>
+                                <td>escrita de número reais</td>
+                            </tr>
+                            <tr>
+                                <td>%s</td>
+                                <td>escrita de vários caracteres</td>
+                            </tr>
+                            <tr>
+                                <td>%p</td>
+                                <td>escrita de um endereco de memoria</td>
+                            </tr>
+                            <tr>
+                                <td>%e ou %E</td>
+                                <td>escrita em notação científica</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
             <p>Exemplos:</p>
             <pre>
 int x = 10;
@@ -251,40 +284,108 @@ printf("%d caixas\n", x);
 printf("Total de %d caixas\n", x);
                             </pre>
         </section>
+
         <section id="leia">
             <h2>Leia</h2>
+            <div class="div-section var-def">
+                <div class="table-def">
+                    <table border="1" class="tables">
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><strong>Alguns "tipos de entrada"</strong></td>
+                            </tr>
+                            <tr>
+                                <td>%c</td>
+                                <td>Leitura de um caractere</td>
+                            </tr>
+                            <tr>
+                                <td>%d ou %i</td>
+                                <td>Leitura de números inteiros<br> (%d para signed, %i for signed or
+                                    unsigned)</td>
+                            </tr>
+                            <tr>
+                                <td>%f</td>
+                                <td>Leitura de números reais</td>
+                            </tr>
+                            <tr>
+                                <td>%s</td>
+                                <td>Leitura de uma string (sequência de caracteres)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-def">
+                    <table>
+                        <tr>
+                            <td>
+                                <pre><code>
+scanf("%tipo_de_entrada", &variável);
+scanf("%tipo1 %tipo2", &var1, &var2);
+                                </code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <p>Exemplo:</p>
             <pre>
-    scanf("%tipo_de_entrada", &variável);
-    scanf("%tipo1 %tipo2", &var1, &var2);
-            </pre>
-            <table border="1" class="tables">
+scanf("%d %d", &x, &z);
+                        </pre>
+        </section>
+
+        <section class="div-cor" id="op-rel">
+            <h2>Operadores relacionais</h2>
+            <table class="table-def">
+                <tr>
+                    <td><strong>Operador</strong></td>
+                    <td><strong>Operação</strong></td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>igual</td>
+                </tr>
+                <tr>
+                    <td>! =</td>
+                    <td>diferente</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>maior do que</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>menor do que</td>
+                </tr>
+                <tr>
+                    <td>&gt; =</td>
+                    <td>maior ou igual</td>
+                </tr>
+                <tr>
+                    <td>&lt; =</td>
+                    <td>menor ou igual</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="logico">
+            <h2>Operadores lógicos</h2>
+            <table border="1" class="table-def">
                 <tbody>
                     <tr>
-                        <td colspan="2"><strong>Alguns "tipos de entrada"</strong></td>
+                        <td>&&</td>
+                        <td>E</td>
                     </tr>
                     <tr>
-                        <td>%c</td>
-                        <td>Leitura de um caractere</td>
+                        <td>||</td>
+                        <td>OU</td>
                     </tr>
                     <tr>
-                        <td>%d ou %i</td>
-                        <td>Leitura de números inteiros<br> (%d para signed, %i for signed or
-                            unsigned)</td>
-                    </tr>
-                    <tr>
-                        <td>%f</td>
-                        <td>Leitura de números reais</td>
-                    </tr>
-                    <tr>
-                        <td>%s</td>
-                        <td>Leitura de uma string (sequência de caracteres)</td>
+                        <td>!</td>
+                        <td>Não</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Exemplo:</p>
-                        <pre>
-scanf("%d %d", &x, &z);
-                        </pre>
         </section>
     </main>
 </body>

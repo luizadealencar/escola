@@ -147,12 +147,6 @@ ul {
   display: block;
 }
 
-.imagempc {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
 .imagemalgo {
   width: 100%;
   max-width: 700px;
@@ -168,11 +162,15 @@ ul {
 .comentarios {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comentarios img{
+  box-shadow: 15px 10px 10px 0 black; /* Sombra */
 }
 
 img {
   display: block;
-  margin: 8px auto;
   max-width: 100%;
 }
 
@@ -197,19 +195,7 @@ tr:nth-child(odd) {
   background-color: #fff;
 }
 
-.ementa,
-.habilidades,
-#algo,
-#bit,
-#hardware,
-#compilador,
-#variavel,
-#comentario,
-#expressao,
-#relacional,
-#indentacao,
-#biblioteca,
-#escreva {
+.div-cor {
   background-color: #555;
   color: white;
 }
@@ -297,8 +283,6 @@ tr:nth-child(odd) {
   gap: 3em;
 }
 
-
-
 .btn,
 .biblioteca {
   background-color: #3498db;
@@ -340,12 +324,84 @@ header h1 a {
   color: inherit;
 }
 
+.dropdown-submenu {
+  text-align: start;
+}
+
+.dropdown-submenu{
+  padding: 14px 16px;
+}
+
 .objetivo {
   text-align: justify;
 }
 
 .introducao-comentario pre {
   text-align: left;
+}
+
+.div-section {
+  display: flex; /* Ativa layout flexbox */
+  align-items: center; /* Alinha itens verticalmente no centro */
+  justify-content: center;
+  gap: 10px;
+}
+
+.imagem-esquerda {
+  flex: 1; /* Ocupa metade do espaço disponível */
+  margin-right: 20px; /* Espaçamento à direita */
+  max-width: 400px;
+  height: auto;
+  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+}
+
+.texto-direita {
+  flex: 1; /* Ocupa metade do espaço disponível */
+  text-align: center; /* Texto centralizado */
+  border: 1.5px solid black; /* Borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
+}
+
+.texto-direita-center li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.table-def pre code{
+  display: flex;
+  text-align: start;
+  font-size: 16px;
+}
+
+.table-def p{
+  text-align: start;
+}
+
+.table-def{
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+}
+
+.variavel-def{
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+  max-width: 500px;
+}
+
+.var-def{
+  gap: 25px;
+}
+
+.tables {
+  display: flex;
+  align-items: stretch;
 }
 
 @media (max-width: 768px) {
@@ -489,7 +545,8 @@ header h1 a {
     font-size: 10px;
   }
 
-  .introducao-comentario {
-    display: none;
+  .div-section{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
