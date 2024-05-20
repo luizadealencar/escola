@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linguagem</title>
+    <title>Linguagem de Programação</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,11 +43,27 @@
                         <li><a href="introducao.html#leia">Leia</a></li>
                         <li><a href="introducao.html#op-rel">Operadores relacionais</a></li>
                         <li><a href="introducao.html#logico">Operadores lógicos</a></li>
+                        <li><a href="introducao.html#op-atr-sim">Operadores de Atribuição ao Simplificada</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Linguagem de C
+                    <ul class="dropdown-content">
+                        <li><a href="linguagemC.html#if-else">Condição (If - Else)</a></li>
+                        <li class="dropdown-submenu">
+                            Estrutura de Repetição
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="linguagemC.html#while">Enquanto .. faça (While)</a></li>
+                                <li><a href="linguagemC.html#for">Para .. faça (For)</a></li>
+                                <li><a href="linguagemC.html#do-while">Repita .. até (Do While)</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+    
     <main class="introducao">
         <section id="linguagem-c">
             <h2>Linguagem de C</h2>
@@ -108,28 +124,28 @@
                         <tr>
                             <td>
                                 <pre>
-        #include &lt;stdio.h&gt;
-        #include &lt;stdlib.h&gt;
-        
-        int main() {
-            printf("Hello World\n"); // Imprime "Hello World"
-            system("pause");
-            return 0;
-        }
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    printf("Hello World\n"); // Imprime "Hello World"
+    system("pause");
+    return 0;
+}
                               </pre>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <pre>
-        /* #include &lt;stdio.h&gt;
-        #include &lt;stdlib.h&gt;
-        
-        int main() {
-            printf("Hello World\n"); // Imprime "Hello World"
-            system("pause");
-            return 0;
-        } */
+/* #include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    printf("Hello World\n"); // Imprime "Hello World"
+    system("pause");
+    return 0;
+} */
                               </pre>
                             </td>
                         </tr>
@@ -154,7 +170,9 @@
                     "D:\Programas\".</li>
             </ul>
             <p>Aqui contêm o link para todas as Bibliotecas mais comuns que são usadas:</p>
-            <button class="biblioteca"><a href="biblioteca.html">Clique aqui.</a></button>
+            <div class="button">
+                <button class="biblioteca"><a href="biblioteca.html">Clique aqui.</a></button>
+            </div>
         </section>
 
         <section id="variavel-lp">
@@ -387,7 +405,54 @@ scanf("%d %d", &x, &z);
                 </tbody>
             </table>
         </section>
+
+        <section class="div-cor" id="op-atr-sim">
+            <h2>Operadores de Atribuição ao Simplificada</h2>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <td><strong>Operador</strong></td>
+                        <td><strong>Exemplo</strong></td>
+                        <td><strong>Conta</strong></td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += y</td>
+                        <td>x = x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= y</td>
+                        <td>x = x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= y</td>
+                        <td>x = x * y</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= y</td>
+                        <td>x = x / y</td>
+                    </tr>
+                    <tr>
+                        <td>++</td>
+                        <td>x++</td>
+                        <td>x = x + 1</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>x--</td>
+                        <td>x = x - 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar" target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
 </body>
 
 </html>

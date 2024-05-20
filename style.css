@@ -10,9 +10,22 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #9fd9b3;
+  color: #ff1d44;
   padding: 20px;
+  border-radius: 0 0 30px 30px;
+}
+
+footer {
+  background-color: #9fd9b3;
+  color: #ff1d44;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff1d44;
+  text-decoration: none;
 }
 
 nav ul li a {
@@ -59,7 +72,6 @@ p {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 0;
-  /* transform: translateX(100%); */
   transition: opacity 0.7s ease, transform 0.7s ease;
   position: relative;
 }
@@ -82,18 +94,17 @@ ul {
 
 .navbar,
 .navbar a li {
-  background-color: #333;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  color: white;
+  color: #ff1d44;
+  font-weight: bold;
 }
 
 .dropdown-content {
   margin-right: 20px;
-  display: inline-block;
 }
 
 .navbar li a {
@@ -103,15 +114,18 @@ ul {
   text-decoration: none;
 }
 
-.navbar li:hover,
-.dropdown-submenu-content:hover ul li {
-  background-color: #555;
+.navbar li:hover {
+  background-color: #9fd9b3;
+}
+
+.dropdown-submenu .dropdown-submenu-content:hover {
+  background-color: #3ea3af;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000000;
+  background-color: #3ea3af;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -126,7 +140,7 @@ ul {
 }
 
 .dropdown-content a:hover {
-  background-color: #303030;
+  background-color: #9fd9b3;
 }
 
 .dropdown:hover .dropdown-content {
@@ -135,10 +149,9 @@ ul {
 
 .dropdown-submenu .dropdown-submenu-content {
   display: none;
-  position: absolute;
   left: 100%;
   bottom: 0;
-  background-color: #000000;
+  background-color: #3ea3af;
   min-width: 190px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -165,8 +178,8 @@ ul {
   justify-content: center;
 }
 
-.comentarios img{
-  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+.comentarios img {
+  box-shadow: 15px 10px 10px 0 black;
 }
 
 img {
@@ -196,15 +209,8 @@ tr:nth-child(odd) {
 }
 
 .div-cor {
-  background-color: #555;
+  background-color: #81657e;
   color: white;
-}
-
-#relacional td,
-#bit td,
-#escreva th,
-#escreva td {
-  color: black;
 }
 
 .center {
@@ -254,6 +260,11 @@ tr:nth-child(odd) {
 .navbar a li {
   padding: 0;
   margin-right: 10px;
+  
+}
+
+.navbar a{
+  text-decoration: none;
 }
 
 @keyframes slideUp {
@@ -285,16 +296,20 @@ tr:nth-child(odd) {
 
 .btn,
 .biblioteca {
-  background-color: #3498db;
+  background-color: #a8d5ba;
   color: #fff;
   padding: 15px 30px;
-  /* Aumenta o padding para criar espaço */
   text-decoration: none;
-  /* Remove o sublinhado */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  padding: 6px;
 }
 
 .biblioteca {
@@ -309,9 +324,7 @@ tr:nth-child(odd) {
 .btn a,
 .biblioteca a {
   text-decoration: none;
-  /* Remove sublinhado */
   color: inherit;
-  /* Herda cor da fonte do botão */
 }
 
 .ementa a {
@@ -326,10 +339,8 @@ header h1 a {
 
 .dropdown-submenu {
   text-align: start;
-}
-
-.dropdown-submenu{
   padding: 14px 16px;
+  color: #fff;
 }
 
 .objetivo {
@@ -341,61 +352,66 @@ header h1 a {
 }
 
 .div-section {
-  display: flex; /* Ativa layout flexbox */
-  align-items: center; /* Alinha itens verticalmente no centro */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .imagem-esquerda {
-  flex: 1; /* Ocupa metade do espaço disponível */
-  margin-right: 20px; /* Espaçamento à direita */
+  flex: 1;
+  margin-right: 20px;
   max-width: 400px;
   height: auto;
-  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+  box-shadow: 15px 10px 10px 0 black;
 }
 
 .texto-direita {
-  flex: 1; /* Ocupa metade do espaço disponível */
-  text-align: center; /* Texto centralizado */
-  border: 1.5px solid black; /* Borda */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+  flex: 1;
+  text-align: center;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  box-shadow: 15px 10px 10px 0 black;
   max-width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 6px;
+  background-color: white;
+  color: black;
 }
 
-.texto-direita-center li{
+.texto-direita-center li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.table-def pre code{
+.table-def pre code {
   display: flex;
   text-align: start;
   font-size: 16px;
 }
 
-.table-def p{
+.table-def p {
   text-align: start;
 }
 
-.table-def{
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+.table-def {
+  border-radius: 10px;
+  box-shadow: 15px 10px 10px 0 black;
+  color: black
 }
 
-.variavel-def{
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 15px 10px 10px 0 black; /* Sombra */
+.variavel-def {
+  border-radius: 10px;
+  box-shadow: 15px 10px 10px 0 black;
   max-width: 500px;
+  background-color: white;
+  color: black;
 }
 
-.var-def{
+.var-def {
   gap: 25px;
 }
 
@@ -404,7 +420,28 @@ header h1 a {
   align-items: stretch;
 }
 
+.texto-direita,
+.imagem-esquerda,
+table,
+.variavel-def,
+.comentarios {
+  transition: transform 0.3s ease-in-out;
+}
+
+.texto-direita:hover,
+.imagem-esquerda:hover,
+table:hover,
+.variavel-def:hover,
+.comentarios:hover {
+  transform: scale(1.05);
+}
+
+#menu-toggle-checkbox {
+  display: none;
+}
+
 @media (max-width: 768px) {
+
   html {
     width: 100%;
   }
@@ -450,7 +487,6 @@ header h1 a {
     font-size: 24px;
     cursor: pointer;
     display: block;
-    margin-top: 20px;
     text-align: end;
   }
 
@@ -469,6 +505,7 @@ header h1 a {
     text-align: end;
     padding: 6px 0;
     justify-content: flex-end;
+    
   }
 
   .navbar a li,
@@ -490,19 +527,18 @@ header h1 a {
   .dropdown-content {
     position: static;
     display: none;
-    background-color: #333;
+    background-color: #9fd9b3;
   }
 
   .dropdown-submenu {
     text-align: start;
   }
 
-  .dropdown-submenu-content {
-    position: static;
+  .dropdown-submenu .dropdown-submenu-content {
     display: none;
-    background-color: #333;
-    left: 0;
+    position: static;
   }
+
 
   #menu-toggle-checkbox:checked~nav .navbar {
     display: block;
@@ -515,7 +551,7 @@ header h1 a {
   }
 
   header h1 {
-    margin: 10px 0;
+    margin: 0;
     font-size: 24px;
     text-align: start;
   }
@@ -545,8 +581,12 @@ header h1 a {
     font-size: 10px;
   }
 
-  .div-section{
+  .div-section {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  footer p {
+    text-align: center;
   }
 }

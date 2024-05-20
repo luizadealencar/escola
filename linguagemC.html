@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguagem C</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Linguagem de Programação</h1>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
+        <nav>
+            <ul class="navbar">
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <li class="dropdown">
+                    Ementa
+                    <ul class="dropdown-content">
+                        <li><a href="lp.html#objetivo">Objetivos</a></li>
+                        <li><a href="lp.html#ementa">Ementa</a></li>
+                        <li><a href="lp.html#competencia">Competências</a></li>
+                        <li><a href="lp.html#habilidades">Habilidades</a></li>
+                        <li><a href="lp.html#base">Bases Tecnológicas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Introdução à Linguagem de Programação
+                    <ul class="dropdown-content">
+                        <li><a href="introducao.html#linguagem-c">Linguagem de C</a></li>
+                        <li><a href="introducao.html#indentacao">Indentação</a></li>
+                        <li><a href="introducao.html#coment">Comentários</a></li>
+                        <li><a href="introducao.html#biblioteca">Biblioteca</a></li>
+                        <li><a href="introducao.html#escreva">Escreva</a></li>
+                        <li><a href="introducao.html#leia">Leia</a></li>
+                        <li><a href="introducao.html#op-rel">Operadores relacionais</a></li>
+                        <li><a href="introducao.html#logico">Operadores lógicos</a></li>
+                        <li><a href="introducao.html#op-atr-sim">Operadores de Atribuição ao Simplificada</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Linguagem de C
+                    <ul class="dropdown-content">
+                        <li><a href="linguagemC.html#if-else">Condição (If - Else)</a></li>
+                        <li class="dropdown-submenu">
+                            Estrutura de Repetição
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="linguagemC.html#while">Enquanto .. faça (While)</a></li>
+                                <li><a href="linguagemC.html#for">Para .. faça (For)</a></li>
+                                <li><a href="linguagemC.html#do-while">Repita .. até (Do While)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="if-else">
+        <h2>Condição (If - Else)</h2>
+        <div class="section">
+            <div class="example">
+                <h3>Exemplo do Algoritmo:</h3>
+                <pre><code>
+   A ← 2
+   B ← 3
+   se A &gt; B
+     então C ← A + B
+   fim se
+          </code></pre>
+            </div>
+            <div class="syntax">
+                <h3>Sintaxe em C:</h3>
+                <pre><code>
+   if (condição V){
+        ...
+   } else {
+        ...
+   }
+          </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Exemplo do Algoritmo em C:</h3>
+                <pre><code>
+#include &lt;stdio.h&gt;
+        
+int main(){
+   int A, B, C;
+   A=2;
+   B=3;
+   if (A > B){
+      C = A + B;
+   } else {
+      C = A - B;
+   }
+   return 0;
+}
+          </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="est-rep">
+        <h2>Estrutura de Repetição</h2>
+
+        <h3 id="while">Enquanto .. faça (While):</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Exemplo do Algoritmo:</h3>
+                <pre><code>
+   enquanto &lt;condição&gt; faça
+     &lt;sequência de comandos&gt;
+   fim enquanto
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Sintaxe em C:</h3>
+                <pre><code>
+   while (condição) {
+      ...
+   }
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Exemplo do Algoritmo em C:</h3>
+                <pre><code>
+#include &lt;stdio.h&gt;
+        
+int main(){
+    int I;
+    I=1;
+    while(I&lt;=3){
+        printf("I = %d", I);
+        I++;
+    }
+    return 0;
+}
+        </code></pre>
+            </div>
+        </div>
+
+        <h3 id="for">Para .. faça (For):</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Exemplo do Algoritmo:</h3>
+                <pre><code>
+   para i de a até b faça
+     &lt;comando 1&gt;
+     &lt;comando 2&gt;
+     &lt;comando 3&gt;
+     &lt;comando n&gt;
+   fim para
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Sintaxe em C:</h3>
+                <pre><code>
+    for (I=n;I&lt;=n;I++){
+        ...
+    }
+    //I pode ser qualquer letra, pois é um identificador de variável
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Exemplo do Algoritmo em C:</h3>
+                <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+    
+int main(){
+    int I, X;
+    I=1;
+    X=1;
+    for (I=1;I&lt;=5;I++){
+        pow(X, 2);
+        printf(X);
+    }
+    return 0;
+}
+        </code></pre>
+            </div>
+        </div>
+
+        <h3 id="do-while">Repita .. até (Do While):</h3>
+        <div class="section">
+            <div class="syntax">
+                <h3>Exemplo do Algoritmo:</h3>
+                <pre><code>
+   repita
+     &lt;sequência de comandos&gt;
+   até &lt;condição&gt;
+        </code></pre>
+            </div>
+            <div class="example">
+                <h3>Sintaxe em C:</h3>
+                <pre><code>
+   do{
+    ...
+   } while (I &lt;= n);
+   //I pode ser qualquer letra, pois é um identificador de variável
+        </code></pre>
+            </div>
+            <div class="reads">
+                <h3>Exemplo do Algoritmo em C:</h3>
+                <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int I = 1;
+    do {
+        printf("I = %d\n", I);
+        I = I + 1;
+    } while (I &lt;= 3);
+    return 0;
+}        
+        </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>

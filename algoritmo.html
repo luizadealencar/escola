@@ -19,7 +19,9 @@
     <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
     <nav>
       <ul class="navbar">
-        <a href="index.html"><li>Início</li></a>
+        <a href="index.html">
+          <li>Início</li>
+        </a>
         <li class="dropdown">
           Ementa
           <ul class="dropdown-content">
@@ -72,9 +74,7 @@
             <li class="dropdown-submenu">
               Estrutura de Repetição
               <ul class="dropdown-submenu-content">
-                <li>
-                  <a href="algoritmo.html#enquanto">Enquanto .. faça</a>
-                </li>
+                <li><a href="algoritmo.html#enquanto">Enquanto .. faça</a></li>
                 <li><a href="algoritmo.html#para">Para .. faça</a></li>
                 <li><a href="algoritmo.html#repita">Repita .. até</a></li>
               </ul>
@@ -115,8 +115,8 @@
    A=2
    B=3
    Se A é maior do que B
-     então C = A + B
-   fim Se
+     Então C = A + B
+   Fim Se
           </code></pre>
       </div>
     </div>
@@ -184,9 +184,9 @@
    A=2
    B=3
    Se A é maior do que B
-     então C = A + B
-     se não C = A - B
-   fim Se
+     Então C = A + B
+     Se não C = A - B
+   Fim Se
         </code></pre>
       </div>
     </div>
@@ -220,9 +220,9 @@
         <pre><code>
    I=1
    Enquanto I é menor ou igual a 3, faça:
-     escreva(“I = “, I)
+     Escreva(“I = “, I)
      I = I + 1
-   fim Enquanto
+   Fim Enquanto
         </code></pre>
       </div>
     </div>
@@ -243,19 +243,21 @@
       <div class="example">
         <h3>Exemplo:</h3>
         <pre><code>
+   X ← 1
    para I de 1 até 5 faça
-     X  ← X^2
-     escreva(x)
+     X ← X^2
+     escreva(X)
    fim para
         </code></pre>
       </div>
       <div class="reads">
         <h3>Lê-se:</h3>
         <pre><code>
+   X=1
    Para I de 1 até 5 faça
      X = X^2
-     escreva(X)
-   fim para
+     Escreva(X)
+   Fim para
         </code></pre>
       </div>
     </div>
@@ -291,30 +293,11 @@
       </div>
     </div>
   </section>
-  
-  <script>
-    // Função para adicionar classe 'active-section' à seção visível
-    function setActiveSection() {
-      const sections = document.querySelectorAll(".syntax, .example, .reads");
-      sections.forEach((section) => {
-        const bounding = section.getBoundingClientRect();
-        if (
-          bounding.top >= 0 &&
-          bounding.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight)
-        ) {
-          section.classList.add("active-section");
-        } else {
-          section.classList.remove("active-section");
-        }
-      });
-    }
 
-    // Adiciona um ouvinte de evento de rolagem para chamar a função quando necessário
-    window.addEventListener("scroll", setActiveSection);
-    // Chama a função quando a página é carregada para definir a seção inicialmente visível
-    window.addEventListener("load", setActiveSection);
-  </script>
+  <footer>
+    <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+        target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+  </footer>
 </body>
 
 </html>
