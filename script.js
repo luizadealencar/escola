@@ -1,21 +1,44 @@
-var dropdowns = document.querySelectorAll('.dropdown');
+document.addEventListener('DOMContentLoaded', function () {
+  var dropdowns = document.querySelectorAll('.dropdown');
 
-dropdowns.forEach(function (dropdown) {
-  var dropdownContent = dropdown.querySelector('.dropdown-content');
-  var dropdownContent = dropdown.querySelector('.dropdown-content dropdown-submenu-content');
+  dropdowns.forEach(function (dropdown) {
+    var dropdownContent = dropdown.querySelector('.dropdown-content');
 
-  dropdown.addEventListener('click', function (event) {
-    if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
-      dropdownContent.style.display = 'block';
-    } else {
-      dropdownContent.style.display = 'none';
-    }
+    dropdown.addEventListener('click', function (event) {
+      if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
 
-    if (!event.target.closest('a')) {
-      event.preventDefault();
-    }
+      if (!event.target.closest('a')) {
+        event.preventDefault();
+      }
+    });
+
+    var submenus = dropdown.querySelectorAll('.dropdown-submenu');
+
+    submenus.forEach(function (submenu) {
+      var submenuContent = submenu.querySelector('.dropdown-submenu-content');
+
+      submenu.addEventListener('click', function (event) {
+        if (submenuContent.style.display === 'none' || submenuContent.style.display === '') {
+          submenuContent.style.display = 'block';
+        } else {
+          submenuContent.style.display = 'none';
+        }
+
+        // Stop the click event from propagating to parent elements
+        event.stopPropagation();
+        
+        if (!event.target.closest('a')) {
+          event.preventDefault();
+        }
+      });
+    });
   });
 });
+
 
 function setActiveSection() {
   const sections = document.querySelectorAll(".syntax, .example, .reads");

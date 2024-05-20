@@ -11,20 +11,20 @@ body {
 
 header {
   background-color: #9fd9b3;
-  color: #ff1d44;
+  color: #73738d;
   padding: 20px;
   border-radius: 0 0 30px 30px;
 }
 
 footer {
   background-color: #9fd9b3;
-  color: #ff1d44;
+  color: #73738d;
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #ff1d44;
+  color: #73738d;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  color: #ff1d44;
+  color: #73738d;
   font-weight: bold;
 }
 
