@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de Selecionar a Tabela em SQL!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Selecionar (Select)</h2>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Selecionar a Tabela inteira:</h3>
+                    <pre><code>
+select * from Funcionario;
+                    </code></pre>
+                </div>
+            </div>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th colspan="2"><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>codigo_func</td>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>João</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Maria</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Selecionar somente uma Coluna da Tabela:</h3>
+                    <pre><code>
+select nome_func from Funcionario;
+                    </code></pre>
+                </div>
+            </div>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Selecionar várias Coluna da Tabela:</h3>
+                    <pre><code>
+select codigo_func, nome_func from Funcionario;
+                    </code></pre>
+                </div>
+            </div>
+            <br>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th colspan="2"><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>codigo_func</td>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>João</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Maria</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Selecionar somente uma Linha da Tabela inteira:</h3>
+                    <pre><code>
+select * from Funcionario where nome_func = "João";
+                    </code></pre>
+                </div>
+            </div>
+            <br>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th colspan="2"><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>codigo_func</td>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>João</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Selecionar somente uma Linha de apenas 1 ou mais Colunas da Tabela:</h3>
+                    <pre><code>
+select nome_func from Funcionario where nome_func = "João";
+                    </code></pre>
+                </div>
+            </div>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="button">
+                <button class="biblioteca"><a href="sql.html">Voltar</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>

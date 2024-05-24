@@ -62,7 +62,7 @@ p {
 
 .syntax,
 .example,
-.reads {
+.reads{
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -74,6 +74,34 @@ p {
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.7s ease;
   position: relative;
+}
+
+.alter-sintax {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  position: relative;
+}
+
+.drop-sintax {
+  vertical-align: top;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  position: relative;
+}
+
+
+
+.sql-cor{
+  background-color: #81657e;
+  color: black;
 }
 
 code {
@@ -588,5 +616,9 @@ table:hover,
 
   footer p {
     text-align: center;
+  }
+
+  .table-def{
+    font-size: 12px;
   }
 }

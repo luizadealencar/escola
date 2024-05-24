@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de Inserção de Dados na Tabela em SQL!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Funcionario</h2>
+            <div class="drop-sintax">
+                <pre><code>
+insert into Funcionario (codigo_func, nome_func) values (1,"João"), (2,"Maria");</code></pre>
+            </div>
+            <br>
+            <table border="1" class="table-def">
+                <tbody>
+                    <tr>
+                        <th colspan="2"><strong>Funcionario</strong></th>
+                    </tr>
+                    <tr>
+                        <td>codigo_func</td>
+                        <td>nome_func</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>João</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Maria</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <h2>Projeto</h2>
+            <div class="drop-sintax">
+                <pre><code>
+insert into Projeto (codigo_proj, nome_proj) values (100,"viva"), (200,"natureza");</code></pre>
+            </div>
+            <br>
+                <table border="1" class="table-def">
+                    <tbody>
+                        <tr>
+                            <th colspan="2"><strong>Projeto</strong></th>
+                        </tr>
+                        <tr>
+                            <td>codigo_prof</td>
+                            <td>nome_proj</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>viva</td>
+                        </tr>
+                        <tr>
+                            <td>200</td>
+                            <td>natureza</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <h2>É Alocado</h2>
+            <div class="drop-sintax">
+                <pre><code>
+insert into Alocado (codigo_func, codigo_proj) values (01, 100), (02, 200);</code></pre>
+            </div>
+                <br>
+                <table border="1" class="table-def">
+                    <tbody>
+                        <tr>
+                            <th colspan="2"><strong>É Alocado</strong></th>
+                        </tr>
+                        <tr>
+                            <td>codigo_func</td>
+                            <td>codigo_proj</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <br>
+            <div class="button">
+                <button class="biblioteca"><a href="sql.html">Voltar</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>

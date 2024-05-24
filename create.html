@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de Criação de Tabelas em SQL!</h1>
+    </header>
+
+    <main>
+        <section id="ling-sql">
+            <div class="tables">
+                <table border="1" class="table-def">
+                    <tbody>
+                        <tr>
+                            <th colspan="2"><strong>Funcionario</strong></th>
+                        </tr>
+                        <tr>
+                            <td>codigo_func</td>
+                            <td>nome_func</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>João</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Maria</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1" class="table-def">
+                    <tbody>
+                        <tr>
+                            <th colspan="2"><strong>Projeto</strong></th>
+                        </tr>
+                        <tr>
+                            <td>codigo_prof</td>
+                            <td>nome_proj</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>viva</td>
+                        </tr>
+                        <tr>
+                            <td>200</td>
+                            <td>natureza</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1" class="table-def">
+                    <tbody>
+                        <tr>
+                            <th colspan="2"><strong>É Alocado</strong></th>
+                        </tr>
+                        <tr>
+                            <td>codigo_func</td>
+                            <td>codigo_proj</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section">
+                <div class="syntax">
+                    <h3>Funcionario:</h3>
+                    <pre><code>
+create table Funcionario(
+    codigo_func int not null,
+    nome_func varchar(30),
+    primary key (codigo_func));
+                
+</code></pre>
+                </div>
+                <div class="reads">
+                    <h3>Projeto:</h3>
+                    <pre>
+                        <code>
+create table Projeto(
+    codigo_proj int not null,
+    nome_proj varchar(30),
+    primary key (codigo_proj));
+                        </code>
+                    </pre>
+                </div>
+                <div class="example">
+                    <h3>É Alocado:</h3>
+                    <pre><code>
+create table Alocado(
+    codigo_func int not null,
+    codigo_proj int not null,
+    foreign key (codigo_func) references Funcionario(codigo_func),
+    foreign key (codigo_proj) references Projeto(codigo_proj));
+                    </code></pre>
+                </div>
+            </div>
+            <div class="button">
+                <button class="biblioteca"><a href="sql.html">Voltar</a></button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>
