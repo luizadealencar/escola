@@ -6,11 +6,11 @@ h3 {
 /*algoritmo, alter, create, linguagemC, select, sql*/
 .section {
   display: flex;
-  justify-content: center;
-  background-color: white;
   padding: 20px;
-  border-radius: 10px;
   gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*algoritmo, alter, create, delete, drop, insert, linguagemC, select, sql, update*/
@@ -98,7 +98,7 @@ ul {
 }
 
 /*definições, introducao*/
-.texto-direita:hover{
+.texto-direita:hover {
   transform: scale(1.05);
 }
 
@@ -114,16 +114,20 @@ img {
   box-shadow: 15px 10px 10px 0 black;
   transition: transform 0.3s ease-in-out;
 }
-.imagembd{
+
+.imagembd {
   width: 100%;
   max-width: 700px;
   height: auto;
 }
+
 /*definições, introducaobd*/
 .imagem-esquerda:hover {
   transform: scale(1.05);
 }
+
 @media (max-width: 768px) {
+
   /*algoritmo, biblioteca, definições, index, insert, introducao, select, sql*/
   h2 {
     margin: 6px 0;
