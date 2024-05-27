@@ -1,0 +1,42 @@
+/*alter, biblioteca, create, definições, delete, insert, introducao, select, sql, update*/
+table {
+    border-collapse: collapse;
+    border: 2px solid #000;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px 0 black;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*alter, biblioteca, create, definições, delete, insert, introducao, select, sql, update*/
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+/*alter, biblioteca, create, definições, delete, insert, introducao, select, sql, update*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*alter, biblioteca, create, definições, delete, insert, introducao, select, sql, update*/
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+/*alter, biblioteca, create, definições, delete, drop, insert, introducao, select, sql*/
+table:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    /*alter, biblioteca, create, definições, delete, insert, introducao, select, sql, update*/
+    td {
+        font-size: 10px;
+    }
+}

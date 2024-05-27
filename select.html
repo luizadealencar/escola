@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
     <script src="script.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +26,14 @@
         <section>
             <h2>Selecionar (Select)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar a Tabela inteira:</h3>
                     <pre><code>
 select * from Funcionario;
                     </code></pre>
                 </div>
             </div>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="2"><strong>Funcionario</strong></th>
@@ -49,14 +54,14 @@ select * from Funcionario;
             </table>
             <br><br>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Coluna da Tabela:</h3>
                     <pre><code>
 select nome_func from Funcionario;
                     </code></pre>
                 </div>
             </div>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th><strong>Funcionario</strong></th>
@@ -74,7 +79,7 @@ select nome_func from Funcionario;
             </table>
             <br><br>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar várias Coluna da Tabela:</h3>
                     <pre><code>
 select codigo_func, nome_func from Funcionario;
@@ -82,7 +87,7 @@ select codigo_func, nome_func from Funcionario;
                 </div>
             </div>
             <br>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="2"><strong>Funcionario</strong></th>
@@ -102,7 +107,7 @@ select codigo_func, nome_func from Funcionario;
                 </tbody>
             </table>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Linha da Tabela inteira:</h3>
                     <pre><code>
 select * from Funcionario where nome_func = "João";
@@ -110,7 +115,7 @@ select * from Funcionario where nome_func = "João";
                 </div>
             </div>
             <br>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="2"><strong>Funcionario</strong></th>
@@ -126,14 +131,14 @@ select * from Funcionario where nome_func = "João";
                 </tbody>
             </table>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Linha de apenas 1 ou mais Colunas da Tabela:</h3>
                     <pre><code>
 select nome_func from Funcionario where nome_func = "João";
                     </code></pre>
                 </div>
             </div>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th><strong>Funcionario</strong></th>
@@ -149,7 +154,7 @@ select nome_func from Funcionario where nome_func = "João";
             <br>
             <br>
             <div class="button">
-                <button class="biblioteca"><a href="sql.html">Voltar</a></button>
+                <button class="btn"><a href="sql.html">Voltar</a></button>
             </div>
         </section>
     </main>

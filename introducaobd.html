@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Banco de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Introdução à Banco de Dados!</h1>
+        <input type="checkbox" class="div-cor" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
+        <nav>
+            <ul class="navbar">
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <li class="dropdown">
+                    Ementa
+                    <ul class="dropdown-content">
+                        <li><a href="bd.html#objetivo">Objetivos</a></li>
+                        <li><a href="bd.html#ementa">Ementa</a></li>
+                        <li><a href="bd.html#competencia">Competências</a></li>
+                        <li><a href="bd.html#habilidades">Habilidades</a></li>
+                        <li><a href="bd.html#base">Bases Tecnológicas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Introdução à Banco de Dados
+                    <ul class="dropdown-content">
+                        <li><a href="introducaobd.html#bd">Banco de Dados</a></li>
+                        <li><a href="introducaobd.html#mer">Modelo de Entidade e Relacionamento (MER)</a></li>
+                        <li class="dropdown-submenu">
+                            Cardinalidade
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="introducaobd.html#cardinalidade">Cardinalidade</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-11">Relacionamento 1:1</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-1N">Relacionamento 1:N</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-N1">Relacionamento N:1</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-NM">Relacionamento N:M</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            Chaves
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="introducaobd.html#primarykey">Chave Primária</a></li>
+                                <li><a href="introducaobd.html#foreignkey">Chave Estrangeira</a></li>
+                                <li><a href="introducaobd.html#superkey">Super Chave</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Linguagem SQL
+                    <ul class="dropdown-content">
+                        <li><a href="sql.html#ling-sql">SQL</a></li>
+                        <li><a href="sql.html#tipo">Tipo de Dados</a></li>
+                        <li><a href="sql.html#create">Create</a></li>
+                        <li><a href="sql.html#alter">Alter</a></li>
+                        <li><a href="sql.html#drop">Drop</a></li>
+                        <li><a href="sql.html#insert">Insert</a></li>
+                        <li><a href="sql.html#update">Update</a></li>
+                        <li><a href="sql.html#delete">Delete</a></li>
+                        <li><a href="sql.html#select">Select</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bd">
+            <h2>Banco de Dados</h2>
+            <div class="div-section">
+                <div class="imagem-esquerda imagembd">
+                    <img src="img/Serviço WEB.png" alt="bd">
+                </div>
+                <div class="texto-direita">
+                    <p>Um banco de dados é um sistema de armazenamento de informações que permite a coleta, o armazenamento, a recuperação e a manipulação de maneira estruturada e eficiente. A imagem trata-se de uma rede integrada de dados que serve para gerenciar e acessar as informações de forma confiável.</p>
+                </div>
+            </div>
+            <br>
+            <h3>Exemplo de Tabela:</h3>
+            <div class="div-section">
+                <div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <th colspan="4"><strong>Nome da Tabela: Alunos</strong></th>
+                            </tr>
+                            <tr>
+                                <td>id (código)</td>
+                                <td>Nome</td>
+                                <td>Matrícula</td>
+                                <td>Telefone</td>
+                            </tr>
+                            <tr>
+                                <td>987</td>
+                                <td>Vitória</td>
+                                <td>3RDC98</td>
+                                <td>27999999999</td>
+                            </tr>
+                            <tr>
+                                <td>369</td>
+                                <td>Júlia</td>
+                                <td>3RDC94</td>
+                                <td>27999988888</td>
+                            </tr>
+                            <tr>
+                                <td>147</td>
+                                <td>João</td>
+                                <td>3RDC91</td>
+                                <td>27888899999</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="div-cor" id="mer">
+            <h2>Modelo de Entidade e Relacionamento (MER)</h2>
+            <div class="div-section">
+                <div class="imagem-esquerda imagembd">
+                    <img src="img/mer.png" alt="bd">
+                </div>
+                <div class="texto-direita">
+                    <p>Descreve entidades e relacionamentos entre elas.</p>
+                </div>
+            </div>
+            <br>
+            <h3>Exemplo de MER:</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/exemplomer.png" alt="bd" class="imagembd">
+                </div>
+            </div>
+        </section>
+
+        <section id="cardinalidade">
+            <h2>Cardinalidade</h2>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/mer.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>É o número de ocorrências de uma entidade que está associado com ocorrências de outra entidade.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="cardinalidade-11">Relacionamento 1:1 (um-por-um)</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/11.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>Uma pessoa pode dirigir apenas um veículo e um veículo pode ter apenas um motorista.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="cardinalidade-1N">Relacionamento 1:N (um-por-muitos)</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/1N.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>Um funcionário pode trabalhar em somente um departamento e um departamento pode ter vários funcionários.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="cardinalidade-N1">Relacionamento N:1 (muitos-por-um)</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/N1.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>Caso esteja ao contrário a cardinalidade: Um funcionário pode trabalhar em vários departamentos, mas o departamento só pode ter somente um funcionário.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="cardinalidade-NM">Relacionamento N:M (muitos-por-muitos)</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/NM.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>Um aluno pode estar matriculado em várias disciplinas e cada disciplina pode ter vários alunos matriculados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="div-cor">
+            <h2>Chaves</h2>
+            <h3 id="primarykey">Chave Primária</h3>
+            <div class="div-section">
+                <div class="imagem-esquerda">
+                    <img src="img/primarykey.png" alt="bd" class="imagembd">
+                </div>
+                <div class="texto-direita">
+                    <p>É o nome dado a chave candidata, escolhida por um projetista de BD para identificar de forma única a entidade. Na imagem mostra como se comporta o Atributo Chave no MER.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="foreignkey">Chave Estrangeira</h3>
+            <div class="div-section">
+                <div class="texto-direita">
+                    <p>É o nome dado à chave primária de uma tabela que vai para outra tabela no intuito de realizar os relacionamentos entre elas e fazer referência.</p>
+                </div>
+            </div>
+            <br>
+            <h3 id="superkey">Super Chave</h3>
+            <div class="div-section">
+                <div class="texto-direita">
+                    <p>Atributos que podem ser uma chave primária.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linguagem SQL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
+    <link rel="stylesheet" href="conteudo.css" />
     <script src="script.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +39,31 @@
                     </ul>
                 </li>
                 <li class="dropdown">
+                    Introdução à Banco de Dados
+                    <ul class="dropdown-content">
+                        <li><a href="introducaobd.html#bd">Banco de Dados</a></li>
+                        <li><a href="introducaobd.html#mer">Modelo de Entidade e Relacionamento (MER)</a></li>
+                        <li class="dropdown-submenu">
+                            Cardinalidade
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="introducaobd.html#cardinalidade">Cardinalidade</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-11">Relacionamento 1:1</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-1N">Relacionamento 1:N</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-N1">Relacionamento N:1</a></li>
+                                <li><a href="introducaobd.html#cardinalidade-NM">Relacionamento N:M</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            Chaves
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="introducaobd.html#primarykey">Chave Primária</a></li>
+                                <li><a href="introducaobd.html#foreignkey">Chave Estrangeira</a></li>
+                                <li><a href="introducaobd.html#superkey">Super Chave</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
                     Linguagem SQL
                     <ul class="dropdown-content">
                         <li><a href="sql.html#ling-sql">SQL</a></li>
@@ -50,7 +81,7 @@
         </nav>
     </header>
 
-    <main class="content">
+    <main>
         <section id="ling-sql">
             <h2>SQL</h2>
             <div class="div-section">
@@ -62,8 +93,8 @@
 
         <section class="div-cor" id="tipo">
             <h2>Tipos de Dados</h2>
-            <div class="div-section var-def">
-                <div class="table-def">
+            <div class="div-section">
+                <div>
                     <table border="1">
                         <tbody>
                             <tr>
@@ -100,7 +131,7 @@
         <section id="create">
             <h2>Criar Tabela (Create Table)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Sintaxe para Chave Primária:</h3>
                     <pre><code>
 create table &lt;nome da tabela&gt;(
@@ -109,7 +140,7 @@ create table &lt;nome da tabela&gt;(
     primary key (&lt;nome da coluna&gt;));
                   </code></pre>
                 </div>
-                <div class="reads">
+                <div class="prog-box">
                     <h3>Explicação:</h3>
                     <ul>
                         <li><strong>not null</strong> - quer dizer que a linha não pode ficar vazia de dados;</li>
@@ -118,7 +149,7 @@ create table &lt;nome da tabela&gt;(
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Sintaxe para Chave Estrangeira:</h3>
                     <pre><code>
 create table &lt;nome da tabela&gt;(
@@ -127,7 +158,7 @@ create table &lt;nome da tabela&gt;(
     foreign key (&lt;nome da coluna&gt;) references &lt;nome da Tabela&gt;(&lt;nome da coluna da Tabela&gt;));
                     </code></pre>
                 </div>
-                <div class="reads">
+                <div class="prog-box">
                     <h3>Explicação:</h3>
                     <ul>
                         <li><strong>foreign key</strong> - chave estrangeira (coluna de outra tabela que leva os mesmos
@@ -136,14 +167,14 @@ create table &lt;nome da tabela&gt;(
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="create.html">Exemplo de Criação de Tabelas em SQL</a></button>
+                <button class="btn"><a href="create.html">Exemplo de Criação de Tabelas em SQL</a></button>
             </div>
         </section>
 
         <section id="alter">
             <h2>Alterar (Alter)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Adicionar Coluna na Tabela:</h3>
                     <pre><code>
 alter table &lt;nome da tabela&gt; add &lt;nome da coluna&gt; &lt;tipo&gt;;
@@ -151,7 +182,7 @@ alter table &lt;nome da tabela&gt; add &lt;nome da coluna&gt; &lt;tipo&gt;;
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Modificar a característica da Coluna:</h3>
                     <pre><code>
 alter table &lt;nome da tabela&gt; modify &lt;nome da coluna&gt; &lt;tipo&gt;;
@@ -159,7 +190,7 @@ alter table &lt;nome da tabela&gt; modify &lt;nome da coluna&gt; &lt;tipo&gt;;
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Mudar o nome da Coluna:</h3>
                     <pre><code>
 alter table &lt;nome da tabela&gt; change &lt;nome da coluna atual&gt; &lt;nome da coluna nova&gt; &lt;tipo&gt;;
@@ -167,7 +198,7 @@ alter table &lt;nome da tabela&gt; change &lt;nome da coluna atual&gt; &lt;nome 
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Excluir Coluna:</h3>
                     <pre><code>
 alter table &lt;nome da tabela&gt; drop &lt;nome da coluna&gt;;
@@ -175,14 +206,14 @@ alter table &lt;nome da tabela&gt; drop &lt;nome da coluna&gt;;
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="alter.html">Exemplo de Alteração de Tabelas em SQL</a></button>
+                <button class="btn"><a href="alter.html">Exemplo de Alteração de Tabelas em SQL</a></button>
             </div>
         </section>
 
         <section id="drop">
             <h2>Exclusão (Drop)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Exluir Tabela:</h3>
                     <pre><code>
 drop table &lt;nome da tabela&gt;;
@@ -190,20 +221,20 @@ drop table &lt;nome da tabela&gt;;
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="drop.html">Exemplo de Exclusão de Tabelas em SQL</a></button>
+                <button class="btn"><a href="drop.html">Exemplo de Exclusão de Tabelas em SQL</a></button>
             </div>
         </section>
 
         <section id="insert">
             <h2>Inserir Dados (Insert)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Inserir dados na Coluna:</h3>
                     <pre><code>
 insert into &lt;nome da tabela&gt;(&lt;nome da coluna&gt;, &lt;nome da coluna&gt;) values (&lt;relação dos valores a serem incluídos&gt;);
                     </code></pre>
                 </div>
-                <div class="reads">
+                <div class="prog-box">
                     <h3>Explicação:</h3>
                     <ul>
                         <li><strong>(&lt;nome da coluna&gt;, &lt;nome da coluna&gt;)</strong> - dentro dos parênteses é
@@ -214,7 +245,7 @@ insert into &lt;nome da tabela&gt;(&lt;nome da coluna&gt;, &lt;nome da coluna&gt
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="insert.html">Exemplo de Inserção de Dados na Tabela em
+                <button class="btn"><a href="insert.html">Exemplo de Inserção de Dados na Tabela em
                         SQL</a></button>
             </div>
         </section>
@@ -222,13 +253,13 @@ insert into &lt;nome da tabela&gt;(&lt;nome da coluna&gt;, &lt;nome da coluna&gt
         <section id="update">
             <h2>Atualização (Update)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Atualização da Tabela:</h3>
                     <pre><code>
 update &lt;nome da tabela&gt; set &lt;nome da coluna&gt; = &lt;novo conteúdo para o campo&gt; where &lt;nome da coluna&gt; = &lt;conteúdo da coluna da mesma linha&gt;;
                     </code></pre>
                 </div>
-                <div class="reads">
+                <div class="prog-box">
                     <h3>Explicação:</h3>
                     <ul>
                         <li><strong><em>set</em></strong> - definir;</li>
@@ -242,7 +273,7 @@ update &lt;nome da tabela&gt; set &lt;nome da coluna&gt; = &lt;novo conteúdo pa
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="update.html">Exemplo de Atualização de Dados na Tabela em
+                <button class="btn"><a href="update.html">Exemplo de Atualização de Dados na Tabela em
                         SQL</a></button>
             </div>
         </section>
@@ -250,13 +281,13 @@ update &lt;nome da tabela&gt; set &lt;nome da coluna&gt; = &lt;novo conteúdo pa
         <section id="delete">
             <h2>Deletar (Delete)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Deletar Linha da Tabela:</h3>
                     <pre><code>
 delete from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado da linha&gt;;
                     </code></pre>
                 </div>
-                <div class="reads">
+                <div class="prog-box">
                     <h3>Explicação:</h3>
                     <ul>
                         <li><strong><em>where</em></strong> - onde;</li>
@@ -266,7 +297,7 @@ delete from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado da li
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="delete.html">Exemplo de Deletar Linha da Tabela em
+                <button class="btn"><a href="delete.html">Exemplo de Deletar Linha da Tabela em
                         SQL</a></button>
             </div>
         </section>
@@ -274,7 +305,7 @@ delete from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado da li
         <section id="select">
             <h2>Selecionar (Select)</h2>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar a Tabela inteira:</h3>
                     <pre><code>
 select * from &lt;nome da tabela&gt;;
@@ -282,7 +313,7 @@ select * from &lt;nome da tabela&gt;;
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Coluna da Tabela:</h3>
                     <pre><code>
 select &lt;nome da coluna&gt; from &lt;nome da tabela&gt;;
@@ -290,7 +321,7 @@ select &lt;nome da coluna&gt; from &lt;nome da tabela&gt;;
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar várias Coluna da Tabela:</h3>
                     <pre><code>
 select &lt;nome da coluna&gt;, &lt;nome da coluna&gt; from &lt;nome da tabela&gt;;
@@ -298,7 +329,7 @@ select &lt;nome da coluna&gt;, &lt;nome da coluna&gt; from &lt;nome da tabela&gt
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Linha da Tabela inteira:</h3>
                     <pre><code>
 select * from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado&gt;;
@@ -306,7 +337,7 @@ select * from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado&gt;
                 </div>
             </div>
             <div class="section">
-                <div class="syntax">
+                <div class="prog-box">
                     <h3>Selecionar somente uma Linha de apenas 1 ou mais Colunas da Tabela:</h3>
                     <pre><code>
 select &lt;nome da coluna&gt;, &lt;nome da coluna&gt; from &lt;nome da tabela&gt; where &lt;nome da coluna&gt; = &lt;dado&gt;;
@@ -314,7 +345,7 @@ select &lt;nome da coluna&gt;, &lt;nome da coluna&gt; from &lt;nome da tabela&gt
                 </div>
             </div>
             <div class="button">
-                <button class="biblioteca"><a href="select.html">Exemplo de Selecionar a Tabela em
+                <button class="btn"><a href="select.html">Exemplo de Selecionar a Tabela em
                         SQL</a></button>
             </div>
         </section>

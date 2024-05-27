@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function setActiveSection() {
-  const sections = document.querySelectorAll(".syntax, .example, .reads");
+  const sections = document.querySelectorAll(".prog-box");
   sections.forEach((section) => {
     const bounding = section.getBoundingClientRect();
     if (

@@ -1,0 +1,30 @@
+/*alter, biblioteca, create, delete, 
+drop, index, insert, select, sql, update*/
+.btn {
+    background-color: #a8d5ba;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*alter, biblioteca, create, delete, drop, index, insert, select, sql, update*/
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+}
+
+/*alter, biblioteca, create, delete, drop, index, insert, select, sql, update*/
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/*alter, biblioteca, create, delete, drop, index, insert, select, sql, update*/
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}

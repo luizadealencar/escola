@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
     <script src="script.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +25,7 @@
     <main>
         <section>
             <div class="tables">
-                <table border="1" class="table-def">
+                <table border="1">
                     <tbody>
                         <tr>
                             <th colspan="2"><strong>Funcionario</strong></th>
@@ -40,7 +45,7 @@
                     </tbody>
                 </table>
                 <br>
-                <table border="1" class="table-def">
+                <table border="1">
                     <tbody>
                         <tr>
                             <th colspan="2"><strong>É Alocado</strong></th>
@@ -60,7 +65,7 @@
                     </tbody>
                 </table>
                 <br>
-                <table border="1" class="table-def">
+                <table border="1">
                     <tbody>
                         <tr>
                             <th colspan="2"><strong>Projeto</strong></th>
@@ -82,7 +87,7 @@
             </div>
             <br><br>
             <div class="section">
-            <div class="alter-sintax">
+            <div class="prog-box">
                 <h3>Adicionar Coluna na Tabela:</h3>
                 <pre><code>
 alter table Funcionario add endereco char(20);
@@ -91,7 +96,7 @@ alter table Funcionario add endereco char(20);
         </div>
             <br><br>
             <h3>Como fica:</h3>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="3"><strong>Funcionario</strong></th>
@@ -115,14 +120,14 @@ alter table Funcionario add endereco char(20);
             </table>
             <br><br>
             <div class="section">
-            <div class="alter-sintax">
+            <div class="prog-box">
                 <h3>Modificar a característica da coluna:</h3>
                 <pre><code>
 alter table Funcionario modify endereco varchar(30);
                   </code></pre>
             </div>
             <br><br>
-            <div class="alter-sintax">
+            <div class="prog-box">
                 <h3>Mudar o nome da coluna:</h3>
                 <pre><code>
 alter table Funcionario change endereco endereco_completo varchar(30);
@@ -131,7 +136,7 @@ alter table Funcionario change endereco endereco_completo varchar(30);
         </div>
             <br><br>
             <h3>Como fica:</h3>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="3"><strong>Funcionario</strong></th>
@@ -155,7 +160,7 @@ alter table Funcionario change endereco endereco_completo varchar(30);
             </table>
             <br><br>
             <div class="section">
-            <div class="alter-sintax">
+            <div class="prog-box">
                 <h3>Excluir coluna:</h3>
                 <pre><code>
 alter table Funcionario drop endereco_completo;
@@ -164,7 +169,7 @@ alter table Funcionario drop endereco_completo;
         </div>
             <br><br>
             <h3>Como fica:</h3>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <th colspan="2"><strong>Funcionario</strong></th>
@@ -185,7 +190,7 @@ alter table Funcionario drop endereco_completo;
             </table>
             <br>
             <div class="button">
-                <button class="biblioteca"><a href="sql.html">Voltar</a></button>
+                <button class="btn"><a href="sql.html">Voltar</a></button>
             </div>
         </section>
     </main>

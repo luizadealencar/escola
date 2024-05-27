@@ -1,0 +1,144 @@
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.navbar,
+.navbar a li {
+    display: flex;
+    color: #73738d;
+    font-weight: bold;
+}
+
+.navbar a li, .navbar li{
+    border-bottom: 1px solid #ddd;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.navbar li:hover {
+    background-color: #9fd9b3;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.dropdown,
+.navbar a li {
+    padding: 0;
+    margin-right: 10px;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.navbar a {
+    text-decoration: none;
+}
+
+/*algoritmo, alp, definições, introducao, linguagemC, lp*/
+.dropdown-submenu .dropdown-submenu-content:hover {
+    background-color: #3ea3af;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3ea3af;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.dropdown-content a:hover {
+    background-color: #9fd9b3;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+.menu-toggle-icon {
+    display: none;
+}
+
+/*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+#menu-toggle-checkbox {
+    display: none;
+}
+
+/*algoritmo, alp, definições, introducao, linguagemC, lp*/
+.dropdown-submenu .dropdown-submenu-content {
+    display: none;
+    background-color: #3ea3af;
+}
+
+/*algoritmo, alp, definições, introducao, linguagemC, lp*/
+.dropdown-submenu {
+    text-align: start;
+    padding: 14px 16px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .menu-toggle-icon {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+        text-align: end;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .dropdown li {
+        border-bottom: 1px solid #ddd;
+        text-align: end;
+        padding: 6px 0;
+        justify-content: flex-end;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .dropdown,
+    .navbar a li {
+        border-bottom: 1px solid #ddd;
+        text-align: end;
+        padding: 6px 0;
+        justify-content: flex-end;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .dropdown li {
+        text-align: start;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .dropdown-content a {
+        padding: 3px;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: #9fd9b3;
+    }
+
+    /*algoritmo, alp, bd, definições, introducao, linguagemC, lp, sql*/
+    #menu-toggle-checkbox:checked~nav .navbar {
+        display: block;
+    }
+
+    /*algoritmo, alp, definições, introducao, linguagemC, lp*/
+    .dropdown-submenu {
+        text-align: start;
+    }
+}

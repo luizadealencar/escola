@@ -1,0 +1,21 @@
+/*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, index, insert, introducao, linguagemC, lp, select, sql, update*/
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+}
+/* p - algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, index, insert, introducao, linguagemC, lp, select, sql, update */
+p {
+  margin: 2px;
+}
+
+@media (max-width: 768px) {
+  /*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, index, insert, introducao, linguagemC, lp, select, sql, update*/
+  p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 4px 0;
+  }
+}

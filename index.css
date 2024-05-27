@@ -1,0 +1,65 @@
+/*index*/
+.inicio {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+/*index*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*index*/
+.mensagem {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-in-out;
+}
+
+/*index*/
+.mensagem h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/*index*/
+.mensagem p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*index*/
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 3em;
+}
+
+@media (max-width: 768px) {
+  /*index*/
+  .mensagem {
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  /*index*/
+  .mensagem p {
+    font-size: 12px;
+  }
+
+  /*index*/
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

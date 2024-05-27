@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linguagem C</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
@@ -67,27 +71,27 @@
     <section id="if-else">
         <h2>Condição (If - Else)</h2>
         <div class="section">
-            <div class="example">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo:</h3>
                 <pre><code>
-   A ← 2
-   B ← 3
-   se A &gt; B
-     então C ← A + B
-   fim se
+A ← 2
+B ← 3
+se A &gt; B
+    então C ← A + B
+fim se
           </code></pre>
             </div>
-            <div class="syntax">
+            <div class="prog-box">
                 <h3>Sintaxe em C:</h3>
                 <pre><code>
-   if (condição V){
-        ...
-   } else {
-        ...
-   }
+if (condição V){
+    ...
+} else {
+    ...
+}
           </code></pre>
             </div>
-            <div class="reads">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo em C:</h3>
                 <pre><code>
 #include &lt;stdio.h&gt;
@@ -113,23 +117,23 @@ int main(){
 
         <h3 id="while">Enquanto .. faça (While):</h3>
         <div class="section">
-            <div class="syntax">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo:</h3>
                 <pre><code>
-   enquanto &lt;condição&gt; faça
-     &lt;sequência de comandos&gt;
-   fim enquanto
+enquanto &lt;condição&gt; faça
+    &lt;sequência de comandos&gt;
+fim enquanto
         </code></pre>
             </div>
-            <div class="example">
+            <div class="prog-box">
                 <h3>Sintaxe em C:</h3>
                 <pre><code>
-   while (condição) {
-      ...
-   }
+while (condição) {
+    ...
+}
         </code></pre>
             </div>
-            <div class="reads">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo em C:</h3>
                 <pre><code>
 #include &lt;stdio.h&gt;
@@ -149,27 +153,28 @@ int main(){
 
         <h3 id="for">Para .. faça (For):</h3>
         <div class="section">
-            <div class="syntax">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo:</h3>
                 <pre><code>
-   para i de a até b faça
-     &lt;comando 1&gt;
-     &lt;comando 2&gt;
-     &lt;comando 3&gt;
-     &lt;comando n&gt;
-   fim para
+para i de a até b faça
+    &lt;comando 1&gt;
+    &lt;comando 2&gt;
+    &lt;comando 3&gt;
+    &lt;comando n&gt;
+fim para
         </code></pre>
             </div>
-            <div class="example">
+            <div class="prog-box">
                 <h3>Sintaxe em C:</h3>
                 <pre><code>
-    for (I=n;I&lt;=n;I++){
-        ...
-    }
-    //I pode ser qualquer letra, pois é um identificador de variável
+for (I=n;I&lt;=n;I++){
+    ...
+}
+//I pode ser qualquer letra, 
+pois é um identificador de variável
         </code></pre>
             </div>
-            <div class="reads">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo em C:</h3>
                 <pre><code>
 #include &lt;stdio.h&gt;
@@ -191,24 +196,25 @@ int main(){
 
         <h3 id="do-while">Repita .. até (Do While):</h3>
         <div class="section">
-            <div class="syntax">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo:</h3>
                 <pre><code>
-   repita
-     &lt;sequência de comandos&gt;
-   até &lt;condição&gt;
+repita
+    &lt;sequência de comandos&gt;
+até &lt;condição&gt;
         </code></pre>
             </div>
-            <div class="example">
+            <div class="prog-box">
                 <h3>Sintaxe em C:</h3>
                 <pre><code>
-   do{
-    ...
-   } while (I &lt;= n);
-   //I pode ser qualquer letra, pois é um identificador de variável
+do{
+...
+} while (I &lt;= n);
+//I pode ser qualquer letra, 
+pois é um identificador de variável
         </code></pre>
             </div>
-            <div class="reads">
+            <div class="prog-box">
                 <h3>Exemplo do Algoritmo em C:</h3>
                 <pre><code>
 #include &lt;stdio.h&gt;

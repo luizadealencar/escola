@@ -1,0 +1,55 @@
+/*definições*/
+.center {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/*definições*/
+.imagemalgo {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/*definições*/
+.coment {
+  width: 100%;
+  max-width: 30%;
+  height: auto;
+}
+
+/*definições*/
+.comentarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/*definições*/
+.comentarios img {
+  box-shadow: 15px 10px 10px 0 black;
+}
+
+/*definições*/
+.texto-direita-center li strong {
+  display: flex;
+}
+
+/*definições*/
+.texto-direita-center li {
+  display: flex;
+}
+
+/*definições*/
+.comentarios:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  /*definições*/
+  .coment {
+    display: none;
+  }
+}

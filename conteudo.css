@@ -1,0 +1,40 @@
+/*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+header {
+    background-color: #9fd9b3;
+    color: #73738d;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+/*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+footer {
+    background-color: #9fd9b3;
+    color: #73738d;
+    padding: 20px;
+    text-align: center;
+}
+
+/*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+footer a {
+    color: #73738d;
+    text-decoration: none;
+}
+
+/*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+section {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    /*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        text-align: start;
+    }
+
+    /*algoritmo, alp, alter, bd, biblioteca, create, definições, delete, drop, insert, introducao, linguagemC, lp, select, sql, update*/
+    footer p {
+        text-align: center;
+    }
+}

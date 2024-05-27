@@ -1,0 +1,12 @@
+/*algoritmo, alter, create, definições, delete, drop, insert, introducao, linguagemC, select, sql, update*/
+pre{
+    margin:0;
+  }
+  /*algoritmo, alter, create, definições, delete, drop, insert, introducao, linguagemC, select, sql, update*/
+  pre code {
+    display: flex;
+    margin: 0;
+    max-width: 100%;
+    text-wrap: wrap;
+    text-align: left;
+  }

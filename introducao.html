@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linguagem de Programação</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="table.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
@@ -67,42 +72,42 @@
     <main class="introducao">
         <section id="linguagem-c">
             <h2>Linguagem de C</h2>
-            <pre>
-    #include &lt;stdio.h&gt;
-    #include &lt;stdlib.h&gt;
-          
-    int main(){
-        printf("Hello World \n");
-        system("pause");
-        return 0;
-    }
-            </pre>
+            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+        
+int main(){
+    printf("Hello World \n");
+    system("pause");
+    return 0;
+}
+</code></pre>
             <p>
                 1. Declarações globais: bibliotecas usadas pelo programa:<br>
-            <pre>
-    #include &lt;stdio.h&gt;
-    #include &lt;stdlib.h&gt;
-            </pre>
+            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+</code></pre>
             2. Inicio do programa:<br>
-            <pre>
-    int main(){
-                </pre>
+            <pre><code>
+int main(){
+    </code></pre>
             3. Escreve uma mensagem na tela de saida:<br>
-            <pre>
-    printf("Hello World \n");
-            </pre>
+            <pre><code>
+printf("Hello World \n");
+</code></pre>
             4. Faz uma pausa antes de terminar o programa:<br>
-            <pre>
-    system("pause");
-            </pre>
+            <pre><code>
+system("pause");
+</code></pre>
             5. Retoma o código do erro zero para o Sistema Operacional informando que está tudo ok:<br>
-            <pre>
-    return 0;
-            </pre>
+            <pre><code>
+return 0;
+</code></pre>
             6. Fim do programa:<br>
-            <pre>
-    }
-            </pre>
+            <pre><code>
+}
+</code></pre>
             </p>
         </section>
 
@@ -118,12 +123,12 @@
 
         <section id="coment">
             <h1>Comentários</h1>
-            <div class="div-section var-def">
-                <div class="table-def">
-                    <table class="introducao-comentario table-def">
+            <div class="div-section">
+                <div>
+                    <table>
                         <tr>
                             <td>
-                                <pre>
+                                <pre><code>
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
@@ -132,12 +137,12 @@ int main() {
     system("pause");
     return 0;
 }
-                              </pre>
+</code></pre>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <pre>
+                                <pre><code>
 /* #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
@@ -146,7 +151,7 @@ int main() {
     system("pause");
     return 0;
 } */
-                              </pre>
+                              </code></pre>
                             </td>
                         </tr>
                     </table>
@@ -171,15 +176,15 @@ int main() {
             </ul>
             <p>Aqui contêm o link para todas as Bibliotecas mais comuns que são usadas:</p>
             <div class="button">
-                <button class="biblioteca"><a href="biblioteca.html">Clique aqui.</a></button>
+                <button class="btn"><a href="biblioteca.html">Clique aqui.</a></button>
             </div>
         </section>
 
         <section id="variavel-lp">
             <h2>Variáveis</h2>
-            <div class="div-section var-def">
-                <div class="table-def">
-                    <table class="table-def">
+            <div class="div-section">
+                <div>
+                    <table>
                         <tbody>
                             <tr>
                                 <td><strong>Tipo</strong></td>
@@ -226,8 +231,8 @@ tipo_da_variavel nome_da_variavel;
 
         <section class="div-cor" id="escreva">
             <h2>Escreva</h2>
-            <div class="div-section var-def">
-                <div class="table-def">
+            <div class="div-section">
+                <div>
                     <table>
                         <tr>
                             <td>
@@ -248,7 +253,7 @@ printf("%tipo1 %tipo2", expressão1, expressão2);
                         </tr>
                     </table>
                 </div>
-                <div class="table-def">
+                <div>
                     <table border="1">
                         <tbody>
                             <tr>
@@ -289,24 +294,24 @@ printf("%tipo1 %tipo2", expressão1, expressão2);
             </div>
             <br>
             <p>Exemplos:</p>
-            <pre>
+            <pre><code>
 int x = 10;
 float y = 5.0;
 printf("%d %f\n", x, y);
-                            </pre>
+</code></pre>
 
-            <pre>
+            <pre><code>
 int x = 10;
 printf("Total = %d\n", x);
 printf("%d caixas\n", x);
 printf("Total de %d caixas\n", x);
-                            </pre>
+</code></pre>
         </section>
 
         <section id="leia">
             <h2>Leia</h2>
-            <div class="div-section var-def">
-                <div class="table-def">
+            <div class="div-section">
+                <div>
                     <table border="1" class="tables">
                         <tbody>
                             <tr>
@@ -332,7 +337,7 @@ printf("Total de %d caixas\n", x);
                         </tbody>
                     </table>
                 </div>
-                <div class="table-def">
+                <div>
                     <table>
                         <tr>
                             <td>
@@ -347,14 +352,14 @@ scanf("%tipo1 %tipo2", &var1, &var2);
             </div>
             <br>
             <p>Exemplo:</p>
-            <pre>
+            <pre><code>
 scanf("%d %d", &x, &z);
-                        </pre>
+</code></pre>
         </section>
 
         <section class="div-cor" id="op-rel">
             <h2>Operadores relacionais</h2>
-            <table class="table-def">
+            <table>
                 <tr>
                     <td><strong>Operador</strong></td>
                     <td><strong>Operação</strong></td>
@@ -388,7 +393,7 @@ scanf("%d %d", &x, &z);
 
         <section id="logico">
             <h2>Operadores lógicos</h2>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <td>&&</td>
@@ -408,7 +413,7 @@ scanf("%d %d", &x, &z);
 
         <section class="div-cor" id="op-atr-sim">
             <h2>Operadores de Atribuição ao Simplificada</h2>
-            <table border="1" class="table-def">
+            <table border="1">
                 <tbody>
                     <tr>
                         <td><strong>Operador</strong></td>
@@ -431,8 +436,8 @@ scanf("%d %d", &x, &z);
                         <td>x = x * y</td>
                     </tr>
                     <tr>
-                        <td>/=</td>
-                        <td>x /= y</td>
+                        <td>/ =</td>
+                        <td>x / = y</td>
                         <td>x = x / y</td>
                     </tr>
                     <tr>
