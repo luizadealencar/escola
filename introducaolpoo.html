@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Banco de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindos a Matéria Linguagem de Programação Orientado à Objeto!</h1>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-icon">&#9776;</label>
+        <nav>
+            <ul class="navbar">
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <li class="dropdown">
+                    Ementa
+                    <ul class="dropdown-content">
+                        <li><a href="lpoo.html#objetivo">Objetivos</a></li>
+                        <li><a href="lpoo.html#ementa">Ementa</a></li>
+                        <li><a href="lpoo.html#competencia">Competências</a></li>
+                        <li><a href="lpoo.html#habilidades">Habilidades</a></li>
+                        <li><a href="lpoo.html#base">Bases Tecnológicas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    LPOO
+                    <ul class="dropdown-content">
+                        <li><a href="introducaolpoo.html#poo">Programação Orientado à Objeto</a></li>
+                        <li><a href="introducaolpoo.html#classe">Classe</a></li>
+                        <li><a href="introducaolpoo.html#objeto">Objeto</a></li>
+                        <li><a href="introducaolpoo.html#metodo">Métodos</a></li>
+                        <li><a href="introducaolpoo.html#construtor">Construtores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+
+    <main>
+        <section id="poo">
+            <h2>Programação Orientado à Objeto</h2>
+            <p><strong>Código-fonte</strong> contém <strong>algoritmos</strong> escrito em algum tradutor feito por
+                <strong>linguagens de programações (LP)</strong>.</p>
+            <p>Existem vários estilos de um LP, como:</p>
+            <ul>
+                <li>Estruturado;</li>
+                <li>Funcional;</li>
+                <li>Orientado à Objetos.</li>
+            </ul>
+            <br>
+            <p>Na Programação Orientado à Objeto, existem:</p>
+            <ul>
+                <li>Abstração e simulação do mundo real;</li>
+                <li>Composição e interação entre objetos;</li>
+                <li>Reaproveitamento de códigos.</li>
+            </ul>
+            <br>
+            <p>A linguagem que vamos usar será <strong>JAVA</strong>. Um código orientado à objeto que é composto por <strong>classes, objetos</strong> e pelo <strong>relacionamento</strong> entre eles.</p>
+        </section>
+
+        <section class="div-cor" id="classe">
+            <h2>Classe</h2>
+            <p>Uma <strong>classe</strong> representa um conjunto de <strong>objetos</strong>. Exemplo:</p>
+            <img src="img/exemploclasse.png" alt="classe">
+            <br>
+            <ul>
+                <li><strong>Classe:</strong> Pessoa</li>
+                <li><strong>Atributos:</strong> nome, idade, sexo, cpf</li>
+                <li><strong>Tipos:</strong> String, int, char</li>
+            </ul>
+            <br>
+            <p>Para virar em código de <strong>JAVA</strong>:</p>
+            <pre><code>
+Arquivo: Pessoa.java
+class Pessoa{
+    String nome, cpf;
+    char sexo;
+    int idade;
+}
+            </code></pre>
+        </section>
+
+        <section id="objeto">
+            <h2>Objeto</h2>
+            <p>Um <strong>objeto</strong> é uma instância de uma classe. Cada objeto armazena seus dados através dos atributos da classe. Para a classe Pessoa, por exemplo, podemos criar objetos com os seguintes valores:</p>
+            <br>
+            <ul>
+                <li>Enzo, M, 20, 123.456.789-10</li>
+                <li>Valentina, F, 18, 987.654.321-11</li>
+            </ul>
+            <br>
+            <p>Para virar em código de <strong>JAVA</strong>:</p>
+            <pre><code>
+Arquivo: Main.java
+public static void main (String[] args){
+    Pessoa p1 = new Pessoa();
+    p1.nome = "Nome";
+    p1.cpf = "cpf";
+    p1.idade = 26;
+    p1.sexo = 'F';
+}
+            </code></pre>
+        </section>
+
+        <section class="div-cor" id="metodo">
+            <h2>Métodos</h2>
+            <p>Definem o comportamento dos objetos, e como eles reagem a mensagens enviadas a ele. Usamos os <strong>métodos</strong> para acessar ou modificar o atributos de uma classe.</p>
+            <p>O modelo abaixo adiciona 3 métodos à classe Pessoa:</p>
+            <img src="img/metodoexemplo.png" alt="metodos">
+            <br>
+            <pre><code>
+Arquivo: Pessoa.java
+void aniversario(){
+    this.idade = this.idade + 1;
+}
+
+void atribuiCPF(String c){
+    this.cpf = c;
+}
+
+int consultaIdade(){
+    return this.idade;
+}
+
+Arquivo: Main.java
+System.out.print("Idade atual: " + p1.consultaIdade() + "\n");
+p1.aniversario();
+System.out.print("Idade nova: " + p1.consultaIdade() + "\n");
+p1.atribuiCPF("123.456.789-99");
+System.out.print("Novo CPF: " + p1.cpf);
+
+O que irá sair:
+Idade atual: 26
+Idade nova: 27
+Novo CPF: 123.456.789-99 
+</code></pre>
+        </section>
+
+        <section id="construtor">
+            <h2>Construtores</h2>
+            <p> A palavra <em>new</em> é responsável por "construir" um novo objeto da classe desejada. Sempre que isso ́e feito, o construtor da classe ́é executado.</p>
+            <p>Existem dois métodos para serem feitos na classe Pessoa (podendo usar um ou outro, ou os dois):</p>
+            <pre><code>
+Arquivo: Pessoa.java
+
+1º Modo:
+Pessoa(){
+    System.out,println("Nova pessoa criada no sistema. \n");
+}
+
+2º Modo:
+Pessoa(String n, String c, Data d, char s) {
+    System.out.println("\nNova pessoa criada no sistema.");
+    this.nome = n;
+    this.dataNas = d;
+    this.sexo = s;
+    this.cpf = c;
+}
+</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>
