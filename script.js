@@ -3,42 +3,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
   dropdowns.forEach(function (dropdown) {
     var dropdownContent = dropdown.querySelector('.dropdown-content');
+    var isOpen = false; // Variável para controlar o estado do menu
 
-    dropdown.addEventListener('click', function (event) {
-      if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
-        dropdownContent.style.display = 'block';
-      } else {
+    dropdown.addEventListener('mouseenter', function () {
+      dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseleave', function () {
+      // Apenas oculta o menu se não estiver aberto
+      if (!isOpen) {
         dropdownContent.style.display = 'none';
-      }
-
-      if (!event.target.closest('a')) {
-        event.preventDefault();
       }
     });
 
-    var submenus = dropdown.querySelectorAll('.dropdown-submenu');
-
-    submenus.forEach(function (submenu) {
-      var submenuContent = submenu.querySelector('.dropdown-submenu-content');
-
-      submenu.addEventListener('click', function (event) {
-        if (submenuContent.style.display === 'none' || submenuContent.style.display === '') {
-          submenuContent.style.display = 'block';
-        } else {
-          submenuContent.style.display = 'none';
-        }
-
-        // Stop the click event from propagating to parent elements
-        event.stopPropagation();
-        
-        if (!event.target.closest('a')) {
-          event.preventDefault();
-        }
+    // Adiciona manipuladores de eventos para itens de menu
+    var menuItems = dropdownContent.querySelectorAll('a');
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener('click', function () {
+        isOpen = !isOpen; // Alterna o estado do menu
+        dropdownContent.style.display = isOpen ? 'block' : 'none'; // Alterna a visibilidade do menu
       });
     });
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var dropdowns = document.querySelectorAll('.dropdown-submenu');
+
+  dropdowns.forEach(function (dropdown) {
+    var dropdownContent = dropdown.querySelector('.dropdown-submenu-content');
+    var isOpen = false; // Variável para controlar o estado do menu
+
+    dropdown.addEventListener('mouseenter', function () {
+      dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseleave', function () {
+      // Apenas oculta o menu se não estiver aberto
+      if (!isOpen) {
+        dropdownContent.style.display = 'none';
+      }
+    });
+
+    // Adiciona manipuladores de eventos para itens de menu
+    var menuItems = dropdownContent.querySelectorAll('a');
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener('click', function () {
+        isOpen = !isOpen; // Alterna o estado do menu
+        dropdownContent.style.display = isOpen ? 'block' : 'none'; // Alterna a visibilidade do menu
+      });
+    });
+  });
+});
 
 function setActiveSection() {
   const sections = document.querySelectorAll(".prog-box");

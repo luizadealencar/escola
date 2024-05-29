@@ -41,23 +41,183 @@
                 <li class="dropdown">
                     LPOO
                     <ul class="dropdown-content">
+                        <li class="dropdown-submenu">
+                            Linguagem JAVA
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="introducaolpoo.html#iniciar">Linguagem JAVA</a></li>
+                                <li><a href="introducaolpoo.html#getset">Get e Set</a></li>
+                                <li><a href="introducaolpoo.html#main">Main.java</a></li>
+                                <li><a href="introducaolpoo.html#saida">Saída de Dados</a></li>
+                                <li><a href="introducaolpoo.html#entrada">Entrada de Dados</a></li>
+                            </ul>
+                        </li>
                         <li><a href="introducaolpoo.html#poo">Programação Orientado à Objeto</a></li>
                         <li><a href="introducaolpoo.html#classe">Classe</a></li>
                         <li><a href="introducaolpoo.html#objeto">Objeto</a></li>
                         <li><a href="introducaolpoo.html#metodo">Métodos</a></li>
                         <li><a href="introducaolpoo.html#construtor">Construtores</a></li>
+                        <li><a href="introducaolpoo.html#heranca">Herança</a></li>
+                        <li><a href="introducaolpoo.html#reescrita">Reescrita de métodos</a></li>
+                        <li><a href="introducaolpoo.html#entrada">Entrada de dados</a></li>
+                        <li><a href="introducaolpoo.html#sobrecarga">Sobrecarga de métodos</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    </header>
 
     <main>
-        <section id="poo">
+        <section>
+            <h2>Linguagem JAVA</h2>
+            <p>Antes de darmos início ao Conteúdo, gostaria de deixar algumas dicas da linguagem JAVA.</p><br>
+            <h3 id="iniciar">Iniciar um Arquivo Java como <strong>classe</strong></h3>
+            <p>O nome do arquivo de classes deve ser o mesmo nome que colocará em "&lt;nome da Classe&gt;", então será o
+                nome.java, comece por:</p>
+            <pre><code>
+public class &lt;nome da Classe&gt;{
+    /*Nas próximas linhas devem colocar os atributos da classe, como se fossem coluna de uma Tabela, o que está classe terá?*/
+    /*Primeiro coloca o tipo, e depois o nome da variável, exemplo:*/
+    String nome;
+    &lt;tipo&gt; &lt;nome da variável&gt;;
+}
+</code></pre>
+            <br>
+            <p>Os tipos de variáveis são:</p>
+            <table border="1">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>String</td>
+                        <td>Palavras</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>1 letra</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>Número</td>
+                    </tr>
+                    <tr>
+                        <td>float, double</td>
+                        <td>Números aproximados</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 id="getset">Get e Set</h3>
+            <p>Por ser uma classe que integra as informações, tem dois tipos de códigos para gerar informações:</p>
+            <ul>
+                <li><strong><em>get</em></strong> - retorna (ler) </li>
+                <li><strong><em>set</em></strong> - modificar (escrever)</li>
+            </ul>
+            <p>Exemplo:</p>
+            <pre><code>
+public String getNome() {
+    return nome;
+}
+
+public void setNome(String nome) {
+    this.nome = nome;
+}
+            </code></pre>
+            <h3 id="main">Main.java</h3>
+            <p>O arquivo principal deve-se chamar por Main.java, como iniciar:</p>
+            <pre><code>
+public static void main (String[] args){
+    /*código*/
+}
+</code></pre>
+            <p>Este arquivo é o principal, pois chama todas as classes e métodos deles.</p>
+            <br>
+            <h3 id="saida">Saída de Dados</h3>
+            <p>A saída de dados ocorre pelo <strong>System.out. ...</strong>, as opções são:</p>
+            <br>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td colspan="4"><strong>Tipos de saída de dados</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>System.out.println</strong></td>
+                        <td>Pula linha</td>
+                        <td>Aceita método com sua variável</td>
+                        <td>Não aceita com o "%" do tipo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>System.out.print</strong></td>
+                        <td>Não pula linha</td>
+                        <td>Aceita método com sua variável</td>
+                        <td>Não aceita com o "%" do tipo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>System.out.printf</strong></td>
+                        <td>Não pula linha</td>
+                        <td>Não aceita método com sua variável</td>
+                        <td>Aceita com o "%" do tipo</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 id="entrada">Entrada de Dados</h3>
+            <p>Usaremos no código a palavra <strong>Scanner</strong>, mas para isto precisamos usar a biblioteca
+                <strong>import java.util.Scanner;</strong> na 1ª linha do código, e para implementar seria assim:</p>
+            <pre><code>
+import java.util.Scanner;
+public static void main (String[] args){
+    Scanner s = new Scanner(System.in);
+    Pessoa p1= new Pessoa();
+    tem.out.println("Digite o nome da pessoa: ");
+    p1.setNome(s.nextLine());
+}
+
+ou
+
+import java.util.Scanner;
+public static void main (String[] args){
+    Scanner s = new Scanner(System.in);
+    Pessoa p1= new Pessoa();
+    tem.out.println("Digite o nome da pessoa: ");
+    p1.nome = s.nextLine();
+}
+            </code></pre>
+            <br>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><strong>Em código</strong></td>
+                        <td><strong>Tipos de entrada de dados</strong></td>
+                    </tr>
+                    <tr>
+                        <td>nextLine()</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>next().charAt(0)</td>
+                        <td>char</td>
+                    </tr>
+                    <tr>
+                        <td>nextInt()</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>nextDouble()</td>
+                        <td>double</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </section>
+
+        <section class="div-cor" id="poo">
             <h2>Programação Orientado à Objeto</h2>
             <p><strong>Código-fonte</strong> contém <strong>algoritmos</strong> escrito em algum tradutor feito por
-                <strong>linguagens de programações (LP)</strong>.</p>
+                <strong>linguagens de programações (LP)</strong>.
+            </p>
             <p>Existem vários estilos de um LP, como:</p>
             <ul>
                 <li>Estruturado;</li>
@@ -72,10 +232,12 @@
                 <li>Reaproveitamento de códigos.</li>
             </ul>
             <br>
-            <p>A linguagem que vamos usar será <strong>JAVA</strong>. Um código orientado à objeto que é composto por <strong>classes, objetos</strong> e pelo <strong>relacionamento</strong> entre eles.</p>
+            <p>A linguagem que vamos usar será <strong>JAVA</strong>. Um código orientado à objeto que é composto por
+                <strong>classes, objetos</strong> e pelo <strong>relacionamento</strong> entre eles.
+            </p>
         </section>
 
-        <section class="div-cor" id="classe">
+        <section id="classe">
             <h2>Classe</h2>
             <p>Uma <strong>classe</strong> representa um conjunto de <strong>objetos</strong>. Exemplo:</p>
             <img src="img/exemploclasse.png" alt="classe">
@@ -97,9 +259,11 @@ class Pessoa{
             </code></pre>
         </section>
 
-        <section id="objeto">
+        <section class="div-cor" id="objeto">
             <h2>Objeto</h2>
-            <p>Um <strong>objeto</strong> é uma instância de uma classe. Cada objeto armazena seus dados através dos atributos da classe. Para a classe Pessoa, por exemplo, podemos criar objetos com os seguintes valores:</p>
+            <p>Um <strong>objeto</strong> é uma instância de uma classe. Cada objeto armazena seus dados através dos
+                atributos da classe. Para a classe Pessoa, por exemplo, podemos criar objetos com os seguintes valores:
+            </p>
             <br>
             <ul>
                 <li>Enzo, M, 20, 123.456.789-10</li>
@@ -119,9 +283,11 @@ public static void main (String[] args){
             </code></pre>
         </section>
 
-        <section class="div-cor" id="metodo">
+        <section id="metodo">
             <h2>Métodos</h2>
-            <p>Definem o comportamento dos objetos, e como eles reagem a mensagens enviadas a ele. Usamos os <strong>métodos</strong> para acessar ou modificar o atributos de uma classe.</p>
+            <p>Definem o comportamento dos objetos, e como eles reagem a mensagens enviadas a ele. Usamos os
+                <strong>métodos</strong> para acessar ou modificar o atributos de uma classe.
+            </p>
             <p>O modelo abaixo adiciona 3 métodos à classe Pessoa:</p>
             <img src="img/metodoexemplo.png" alt="metodos">
             <br>
@@ -153,27 +319,158 @@ Novo CPF: 123.456.789-99
 </code></pre>
         </section>
 
-        <section id="construtor">
+        <section class="div-cor" id="construtor">
             <h2>Construtores</h2>
-            <p> A palavra <em>new</em> é responsável por "construir" um novo objeto da classe desejada. Sempre que isso ́e feito, o construtor da classe ́é executado.</p>
+            <p> A palavra <em>new</em> é responsável por "construir" um novo objeto da classe desejada. Sempre que isso
+                ́é feito, o construtor da classe ́é executado.</p>
             <p>Existem dois métodos para serem feitos na classe Pessoa (podendo usar um ou outro, ou os dois):</p>
             <pre><code>
 Arquivo: Pessoa.java
 
 1º Modo:
 Pessoa(){
-    System.out,println("Nova pessoa criada no sistema. \n");
+    System.out.println("Nova pessoa criada no sistema. \n");
 }
 
 2º Modo:
-Pessoa(String n, String c, Data d, char s) {
-    System.out.println("\nNova pessoa criada no sistema.");
+Pessoa(String n, String c, int d, char s) {
+    System.out.println("Nova pessoa criada no sistema. \n");
     this.nome = n;
-    this.dataNas = d;
+    this.idade = d;
     this.sexo = s;
     this.cpf = c;
 }
 </code></pre>
+        </section>
+
+        <section id="heranca">
+            <h2>Herança</h2>
+            <p>Herança em POO permite que uma classe possa ser derivada de outra classe. Um Aluno, por exemplo, é uma
+                Pessoa. Dessa forma, um objeto da classe Aluno deve <strong>herdar</strong> todos os atributos e métodos
+                da classe Pessoa, mas também pode ter seus atributos próprios (ex: número de matrícula). Da mesma forma,
+                um Professor também é uma Pessoa. Além dos atributos da classe Pessoa, um Professor também possui seus
+                próprios atributos (ex: salário). O diagrama a seguir representa a <strong>superclasse</strong> Pessoa
+                (classe base) e as <strong>subclasses</strong> Aluno e Professor (classes derivadas):</p>
+            <img src="img/exemploheranca.png" alt="herança">
+            <br>
+            <p>Para virar em código de <strong>JAVA</strong> usamos a palavra <strong><em>extends</em></strong>:</p>
+            <pre><code>
+Arquivo: Aluno.java
+
+class Aluno extends Pessoa {
+    String matricula;
+}
+
+Arquivo: Professor.java
+
+class Professor extends Pessoa {
+    double salario;
+}
+
+</code></pre>
+            <p>Cada vez que criarmos um objeto da classe Aluno, ele irá possuir todos os atributos de Pessoa, pois agora
+                um Aluno é uma Pessoa. Uma grande vantagem da herança é o reuso. Quando usada corretamente, reduz o
+                número de linhas de código, facilita a programação, a verificação de erros e futuras correções.</p>
+            <p>Para ter um construtor com estas heranças em formato de código em <strong>JAVA</strong>, será:</p>
+            <pre><code>
+Arquivo: Aluno.java
+public class Aluno extends Pessoa {
+    String matricula;
+
+    Aluno(String nome, String cpf, char sexo, int idade, String matricula) {
+        super(nome, cpf, sexo, idade);
+        this.matricula = matricula;
+    }
+}
+
+Arquivo: Professor.java
+public class Professor extends Pessoa {
+    double salario;
+
+    Professor(String nome, String cpf, char sexo, int idade, double salario) {
+        super(nome, cpf, sexo, idade);
+        this.salario = salario;
+    }
+}
+</code></pre>
+            <p>A palavra <strong>super</strong> engloba a classe Pessoa com seus atributos, e só adiciona o que tem a
+                mais na classe.</p>
+        </section>
+
+        <section class="div-cor" id="reescrita">
+            <h2>Reescrita de métodos</h2>
+            <p><strong>@Override</strong></p>
+            <p> Reescrita de métodos permite reimplementar um método em uma subclasse que tenha
+                o comportamento diferente do método na sua superclasse. Ou seja, os <a
+                    href="introducaolpoo.html#metodo">métodos</a> que existem em Pessoa, podem ser usados para Aluno e
+                Professor, vamos ver no código:</p>
+            <div class="button">
+                <button class="btn"><a href="reescrita.html">Exemplo de Método de Reescrita em Java</a></button>
+            </div>
+        </section>
+
+        <section id="sobrecarga">
+            <h2>Sobrecarga de métodos</h2>
+            <p>A sobrecarga de métodos ajuda a tornar o código mais intuitivo e versátil, reutilizando o mesmo nome de
+                método para diferentes necessidades.</p>
+            <div class="button">
+                <button class="btn"><a href="sobrecarga.html">Exemplo de Sobrecarga de Métodos em Java</a></button>
+            </div>
+        </section>
+
+        <section class="div-cor" id="encapsulamento">
+            <h2>Encapsulamento</h2>
+            <ul>
+                <li><strong>public</strong>: indica que uma classe, variável ou método pode ser usado mesmo fora do
+                    pacote em que foram definidos.</li>
+                <li><strong>private</strong>: indica que uma variável ou método só pode ser acessado dentro da classe em
+                    que foi declarado.</li>
+                <li><strong>protected</strong>: indica que uma variável ou método só pode ser acessado na própria classe
+                    ou em suas subclasses.</li>
+            </ul><br>
+            <p>Exemplo:</p>
+            <pre><code>
+PRIVATE:
+public class Pessoa {
+    private String nome;
+
+    private void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+PROTECTED:
+public class Pessoa {
+    protected String nome;
+
+    protected void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+public class Aluno extends Pessoa {
+    public void imprimirNome() {
+        System.out.println(nome); // Acessível por ser protected
+    }
+}
+
+PUBLIC:
+public class Pessoa {
+    public String nome;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pessoa p = new Pessoa();
+        p.nome = "Carlos"; // Acessível por ser public
+        p.setNome("Carlos"); // Acessível por ser public
+    }
+}
+            </code></pre>
         </section>
     </main>
 

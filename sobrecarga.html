@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reescrita de Métodos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todos.css" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="conteudo.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="botoes.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de Método de Reescrita em Java!</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Arquivo: Pessoa.java</p>
+            <pre><code>
+import java.util.Scanner;
+
+public class Pessoa {
+    public String nome;
+    public String cpf;
+    public char sexo;
+    public int idade;
+
+    Pessoa() {
+        System.out.println("Nova pessoa criada no sistema.\n");
+    }
+
+    public Pessoa(String nome, String cpf, char sexo, int idade) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.sexo = sexo;
+        this.idade = idade;
+    }
+
+    public void aniversario() {
+        this.idade++;
+        System.out.println(nome + " fez aniversário e agora tem " + idade + " anos.");
+    }
+
+    public void aniversario(int anos) {
+        this.idade += anos;
+        System.out.println(nome + " teve " + anos + " aniversários e agora tem " + idade + " anos.");
+    }
+
+    public void alteraCPF(String cpf) {
+        this.cpf = cpf;
+        System.out.println("CPF de " + nome + " foi alterado para: " + this.cpf);
+    }
+
+    public void alteraCPF(String cpfAntigo, String cpfNovo) {
+        if (this.cpf.equals(cpfAntigo)) {
+            this.cpf = cpfNovo;
+            System.out.println("CPF de " + nome + " foi alterado de " + cpfAntigo + " para: " + this.cpf);
+        } else {
+            System.out.println("CPF antigo não corresponde ao atual.");
+        }
+    }
+
+    public int consultaIdade() {
+        return this.idade;
+    }
+
+    public int consultaIdade(int anos) {
+        return this.idade + anos;
+    }
+
+    public void lerDados() {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Digite o nome da pessoa: ");
+        this.nome = s.nextLine();
+
+        System.out.println("Digite o CPF da pessoa: ");
+        this.cpf = s.nextLine();
+
+        System.out.println("Digite o sexo da pessoa (M/F): ");
+        this.sexo = s.next().charAt(0);
+
+        System.out.println("Digite a idade da pessoa: ");
+        this.idade = s.nextInt();
+    }
+
+    public void exibirDados() {
+        System.out.println("Dados da pessoa:");
+        System.out.println("Nome: " + this.nome);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println("Sexo: " + this.sexo);
+        System.out.println("Idade: " + this.idade);
+    }
+    // Getters e setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+                </code></pre>
+
+            <p>Arquivo Main.java</p>
+            <pre><code>
+public class Main {
+    public static void main(String[] args) {
+        Pessoa p1 = new Pessoa();
+        p1.lerDados();
+        p1.exibirDados();
+
+        // Exemplo de chamada dos métodos sobrecarregados
+        p1.aniversario();
+        p1.aniversario(5);
+
+        p1.alteraCPF("12345678900");
+        p1.alteraCPF(p1.cpf, "09876543210");
+
+        System.out.println("Idade consultada: " + p1.consultaIdade());
+        System.out.println("Idade consultada daqui a 10 anos: " + p1.consultaIdade(10));
+    }
+}       
+                </code></pre>
+                <p>Saída:</p>
+                <pre><code>
+Nova pessoa criada no sistema.
+
+Digite o nome da pessoa: 
+Fulano
+Digite o CPF da pessoa: 
+123456789
+Digite o sexo da pessoa (M/F): 
+M
+Digite a idade da pessoa: 
+10
+Dados da pessoa:
+Nome: Fulano
+CPF: 123456789
+Sexo: M
+Idade: 10
+Fulano fez aniversário e agora tem 11 anos.
+Fulano teve 5 aniversários e agora tem 16 anos.
+CPF de Fulano foi alterado para: 12345678900
+CPF de Fulano foi alterado de 12345678900 para: 09876543210
+Idade consultada: 16
+Idade consultada daqui a 10 anos: 26
+                </code></pre>
+            <div class="button">
+                <button class="btn"><a href="introducaolpoo.html">Voltar</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvida por: <a href="https://github.com/luizadealencar"
+                target="_blank">https://github.com/luizadealencar</a>&#128151;</p>
+    </footer>
+</body>
+
+</html>
