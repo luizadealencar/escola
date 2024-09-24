@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="todos.css" />
-    <link rel="stylesheet" href="code.css" />
-    <link rel="stylesheet" href="conteudo.css" />
-    <link rel="stylesheet" href="table.css" />
-    <link rel="stylesheet" href="botoes.css" />
     <script src="script.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,10 +40,10 @@
                 </tbody>
             </table>
             <div class="section">
-            <div class="prog-box">
-                <pre><code>
+                <div class="prog-box">
+                    <pre><code>
 update Funcionario set nome_func = "Luiza" where codigo_func = 01;</code></pre>
-            </div>
+                </div>
             </div>
             <h3>Como ficaria:</h3>
             <table border="1">
@@ -72,7 +67,11 @@ update Funcionario set nome_func = "Luiza" where codigo_func = 01;</code></pre>
             </table>
             <br>
             <div class="button">
-                <button class="btn"><a href="sql.html">Voltar</a></button>
+                <a href="sql.html" class="btn">
+                    <div>
+                        Voltar
+                    </div>
+                </a>
             </div>
         </section>
     </main>
